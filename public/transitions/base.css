@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	--color-text: #000;
+    --color-gr-1: #000;
+    --color-gr-2: #000;
+    --color-bg: #7f837f;
+    --color-link: #c0c8c2;
+    --color-link-hover: #000;
+	--padding-ver: 1.5rem;
+	--padding-hor: 1.5rem;
+	--color-bg-overlay: rgb(84 87 84);
+	--color-back: #c0c8c2;
+	--color-back-hover: #000;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+}
+
+main {
+	display: grid;
+	height: 100vh;
+	padding: 0;
+	position: relative;
+}
+
+.intro,
+.content-wrap {
+	position: relative;
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.intro {
+	flex: 1;
+	max-height: 80vmax;
+	margin: auto 0;
+	padding: 0 var(--padding-ver);
+	font-size: 9vw;
+	line-height: 1;
+	text-transform: uppercase;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 2vw;
+	row-gap: 1vw;
+	white-space: nowrap;
+	font-family: "stinger-variable", sans-serif;
+	font-variation-settings: "wdth" 120, "wght" 300;
+	background-color: var(--color-text);
+	background-image: linear-gradient(45deg, var(--color-gr-1), var(--color-gr-2));
+	background-size: 100%;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	will-change: transform, opacity;
+}
+
+
+.intro__image {
+	flex: 1;
+	position: relative;
+	cursor: pointer;
+	will-change: transform;
+	background-size: cover;
+	background-position: 50% 30%;
+	border-radius: 5vw;
+	min-width: 50px;
+	max-width: 100px;
+	transition: opacity 0.3s;
+}
+
+
+.content-wrap {
+	align-self: stretch;
+	display: grid;
+	pointer-events: none;
+}
+
+.content {
+	opacity: 0;
+	pointer-events: none;
+	grid-area: 1 / 1 / -1 / -1;
+	display: grid;
+	grid-template-columns: 100%;
+	height: 100%;
+	grid-template-rows: 70% 1fr;
+	gap: 5vh;
+	padding: 8rem var(--padding-ver) 2rem;
+}
+
+.content--open {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.overlay {
+	grid-area: 1 / 1 / -1 / -1;
+	display: grid;
+	position: relative;
+	z-index: 1000;
+	pointer-events: none;
+	opacity: 0;
+	--columns: 20;
+	grid-template-columns: repeat(var(--columns),1fr);
+}
+
+.overlay div {
+	background: var(--color-bg-overlay);
+}
+
