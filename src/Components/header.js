@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -15,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <div className="fixed w-full z-50 flex items-center justify-between bg-white bg-opacity-80 backdrop-filter backdrop-blur-xl text-black py-2 px-10 sm:px-16 top-0">
+    <div className="fixed w-full z-50 flex items-center justify-between bg-white bg-opacity-70 backdrop-filter backdrop-blur-xl text-black py-2 px-10 sm:px-16 top-0">
       <img
         src={require("../design/logo.png")}
         className="w-18.08 h-20"
@@ -26,7 +25,7 @@ export default function Header() {
           <button
             className="flex flex-col h-12 w-12 rounded justify-center items-center group"
             onClick={toggleMenu}
-            style={{ zIndex: 20 }}
+            style={{ zIndex: 1000 }}
           >
             <div
               className={`${genericHamburgerLine} ${
@@ -57,41 +56,24 @@ export default function Header() {
           >
             <div className="border-4 border-white border-l-green-500 p-6">
               <li className="my-8 text-4xl cursor-pointer text-slate-900">
-                  <a href="./transitions/index6.html" id="home">
-                    Home
-                  </a>
+                <a href="./transitions/index6.html" id="home">
+                  Home
+                </a>
               </li>
               <li className="my-8 text-4xl cursor-pointer text-slate-900">
-                <Link
-                  to="projects"
-                  smooth={true}
-                  offset={-200}
-                  duration={500}
-                  onClick={closeMenu}
-                >
+                <a href="projects" onClick={closeMenu}>
                   Projects
-                </Link>
+                </a>
               </li>
               <li className="my-8 text-4xl cursor-pointer text-slate-900">
-                <Link
-                  to="about"
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
-                  onClick={closeMenu}
-                >
+                <a href="/about" onClick={closeMenu}>
                   About
-                </Link>
+                </a>
               </li>
               <li className="my-8 text-4xl cursor-pointer text-slate-900">
-                <Link
-                  to="get-in-touch"
-                  smooth={true}
-                  duration={500}
-                  onClick={closeMenu}
-                >
+                <a href="/contact" onClick={closeMenu}>
                   Get in Touch!
-                </Link>
+                </a>
               </li>
             </div>
           </ul>
@@ -102,22 +84,21 @@ export default function Header() {
   display: none; 
 } 
 .showMenuNav { 
-  display: block; 
-  position: absolute; 
+  position: fixed;
   width: 100%; 
   height: 100vh; 
   top: 0; 
-  left: 0; 
-  background-color: white; 
-  z-index: 10;
+  left: 0;
+  background-color: white;
+  z-index: 999;
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
   align-items: flex-start;
   align-content: space-around;
   flex-wrap: wrap;
-  color: white; 
-} 
+  color: white;
+}
 `}</style>
     </div>
   );

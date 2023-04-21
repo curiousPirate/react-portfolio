@@ -1,4 +1,6 @@
+/* eslint-disable no-undef */
 import { Overlay } from './overlay.js';
+// import { gsap } from 'gsap';
 
 // Select the overlay element from the DOM
 const overlayEl = document.querySelector('.overlay');
@@ -28,6 +30,7 @@ images.forEach((image, position) => {
         isAnimating = true;
         
         // Animate intro section
+        // eslint-disable-next-line no-undef
         gsap.to(intro, {
             duration: 1.1,
             ease: 'power3.inOut',

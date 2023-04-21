@@ -1,8 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  font-family: 'Nunito Sans', sans-serif;
 }
+
+.fade-wrapper {
+  position: relative;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.sun {
+  background-color: #f2ca1a;
+  width: 10%;
+  padding-top: 10%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 3vw 1vw #fffa62;
+}
+
+.mercury-orbit {
+  width: 40%;
+  padding-top: 40%;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  animation-name: planet-orbit;
+  animation-duration: 4.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.mercury {
+  background-color: #d08770;
+  width: 10%;
+  padding-top: 10%;
+  border-radius: 50%;
+  margin: -5% 25%;
+}
+
+/* 
+.mercury-orbit {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  animation-name: planet-orbit;
+  animation-duration: 8.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.mercury {
+  background-color: #d08770;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin: -5px 50px;
+}
+ */
+
+.venus-orbit {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: planet-orbit;
+  animation-duration: 11.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+} 
+
+.venus {
+  background-color: #bf616a;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  margin: -5px 50px;
+}
+
+
+.earth-orbit {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: planet-orbit;
+  animation-duration: 18.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.earth {
+  position: relative;
+  background-color: #88c0d0;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: -10px 100px;
+}
+
+.moon-orbit {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: planet-orbit;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.moon {
+  background-color: #d8dee9;
+  width: 3px;
+  height: 3px;
+  border-radius: 1.5px;
+  margin: -1.5px 15px;
+
+}
+
+.mars-orbit {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: planet-orbit;
+  animation-duration: 34.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.mars {
+  background-color: #bf616a;
+  width: 17px;
+  height: 17px;
+  border-radius: 8.5px;
+  margin: -8.5px 125px;
+}
+
+.jupiter-orbit {
+  width: 350px;
+  height: 350px;
+  border-radius: 175px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: planet-orbit;
+  animation-duration: 220s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.jupiter {
+  background-color: #D08770;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: -20px 175px;
+}
+
+.saturn-orbit {
+  width: 450px;
+  height: 450px;
+  border-radius: 225px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: planet-orbit;
+  animation-duration: 525.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.saturn-ring {
+  border-color: #EBCB8B;
+  width: 34px;
+  height: 34px;
+  border-radius: 25px;
+  border-width: 2px;
+  border-style: solid;
+  margin: -17px 225px;
+
+}
+
+.saturn {
+  background-color: #EBCB8B;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.uranus-orbit {
+  width: 550px;
+  height: 550px;
+  border-radius: 275px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: planet-orbit;
+  animation-duration: 1533s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.uranus {
+  background-color: #81A1C1;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  margin: -11px 275px;
+}
+
+.neptune-orbit {
+  width: 620px;
+  height: 620px;
+  border-radius: 310px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: planet-orbit;
+  animation-duration: 3011.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.neptune {
+  background-color: #5E81AC;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  margin: -9px 310px;
+}
+
+/* Default styles
+.venus-orbit {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: planet-orbit;
+  animation-duration: 22.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.venus {
+  background-color: #bf616a;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  margin: -5px 50px;
+} */
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .venus-orbit {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    animation-duration: 15s;
+  }
+
+  .venus {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: -3px 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .venus-orbit {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    animation-duration: 10s;
+  }
+
+  .venus {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin: -2px 25px;
+  }
+}
+
+@keyframes planet-orbit {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+

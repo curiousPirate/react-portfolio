@@ -1,15 +1,27 @@
-import Header from "./header/header";
-import Home from "./home/home";
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./Components/header.js";
 
-function App() {
+
+const Home = lazy(() => import("./Components/home.js"));
+const SolarSystem = lazy(() => import("./Components/solarsystem.js"));
+const Contact = lazy(() => import("./Components/contact.js"));
+
+const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <div className="pt-40">
-        <Home />
+    <Router>
+      <div>
+        <Header />
+        <Suspense fallback={<div>Loading...</div>}>
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/about" element={<SolarSystem />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+        </Suspense>
       </div>
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;
