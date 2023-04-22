@@ -13,8 +13,7 @@
     "react-router-dom": "^6.10.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
-    "typed.js": "^2.0.15",
-    "web-vitals": "^2.1.4"
+    "typed.js": "^2.0.15"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,7 +40,5 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.3",
-    "sass-loader": "^13.2.2"
   }
 }

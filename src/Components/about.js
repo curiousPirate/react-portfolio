@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Typed from "typed.js";
 
-const Home = () => {
+const About = () => {
   useEffect(() => {
     // eslint-disable-next-line no-unused-vars
     var typed = new Typed(".auto-type", {
@@ -29,12 +29,12 @@ const Home = () => {
         />
       </div>
       <div className="py-5">
-        <h1 className="text-4xl font-bold">Hello! I'm Chaitanya,</h1>
-        <h2 className="text-xl m-4 relative">
+        <h1 className="text-4xl font-bold text-white">Hello! I'm Chaitanya,</h1>
+        <h1 className="text-xl mb-4">
           Expertise in: <br />
           <span className="auto-type"></span>
-        </h2>
-        <span className="m-4 p-4">
+        </h1>
+        <span className="my-4 mx-4">
           <Link
             to="/contact"
             className="relative inline-block px-4 py-2 font-medium group"
@@ -63,4 +63,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;

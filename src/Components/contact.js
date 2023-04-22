@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import SolarSystem from "./solarsystem";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -40,12 +39,8 @@ function Contact() {
     >
       <div className="w-full xl:w-1/2 xl:pl-10 xl:py-28">
         <h1 className="text-4xl md:text-4xl xl:text-5xl font-bold leading-10 text-slate-950 mb-4 xl:text-left md:mt-0 mt-20">
-          Let's work together!
+          Let's Talk!
         </h1>
-        <p className="text-base leading-normal text-slate-950 xl:text-justify text-justify pb-5">
-          "Thank you for taking the time to visit my portfolio. If you're
-          interested in learning more about my work & skills or start a project, get in touch with me. Use the form below to submit, and I'll get back to you as soon as possible. I look forward to hearing from you!"
-        </p>
         <form onSubmit={handleSubmit} className="flex flex-col w-full max-w-md">
           <label htmlFor="email" className="text-sm font-bold mb-2">
             Email
@@ -92,7 +87,7 @@ function Contact() {
         </form>
       </div>
       <div className="xl:w-1/2 md:mb-14 xl:mb-0 relative h-auto flex items-center justify-center">
-        <SolarSystem />
+
       </div>
     </div>
   );
