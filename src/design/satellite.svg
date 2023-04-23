@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 512 512" xml:space="preserve">
-<g>
+<svg viewBox="0 0 512 512"  class="satellite">
+<path id="satellite-path" fill="none" d="M101.374,291.072 C108.371,272.072 167.884,103.113 240.95,102.133 315.915,102.133 401.861,167.067 423.98,238.311 438.027,283.557 422.839,383.006 314.504,401.784 228.775,416.643 105.532,332.49 102.258,292.615 "/>
+<g  class="satellite">
 	<polygon style="fill:none;" points="256,59.313 243.312,72 256,72 268.687,72 	"/>
 	<polygon style="fill:#5C546A;" points="232,416 232,432 256,432 280,432 280,416 256,416 	"/>
 	<path style="fill:#888693;" d="M240,456h16v-24h-24h-8c-8.82,0-16,7.176-16,16v48c0,8.824,7.18,16,16,16h8v-48

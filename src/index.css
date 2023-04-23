@@ -13,3 +13,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.satellite {
+  position: fixed;
+  width: 30%;
+  height: 30%;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.ufo {
+  position: fixed;
+  width: 30%;
+  height: 30%;
+  overflow: visible;
+  top: 50%;
+  left: 50%;
+}

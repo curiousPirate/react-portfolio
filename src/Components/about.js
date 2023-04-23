@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Typed from "typed.js";
 
+
 const About = () => {
   useEffect(() => {
     // eslint-disable-next-line no-unused-vars
