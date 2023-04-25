@@ -55,7 +55,12 @@ export default function Header() {
               isNavOpen ? "showMenuNav" : "hideMenuNav"
             }`}
           >
-            <div className="border-4 border-transparent border-l-slate-600 p-6">
+            <div
+              className="border-4 border-transparent border-l-slate-600 p-6"
+              style={{
+                backgroundImage: `url("./design/nav.avif")`,
+              }}
+            >
               <li className="text-4xl cursor-pointer">
                 <a
                   href="/"
