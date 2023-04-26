@@ -59,9 +59,6 @@ export default function Header() {
           >
             <div
               className="border-4 border-transparent border-l-slate-600 p-6"
-              style={{
-                backgroundImage: `url("./design/nav.avif")`,
-              }}
             >
               <li className="text-4xl cursor-pointer">
                 <a
@@ -97,15 +94,6 @@ export default function Header() {
                   onClick={closeMenu}
                 >
                   Get in Touch!
-                </a>
-              </li>
-              <li className="text-4xl cursor-pointer">
-                <a
-                  href="./transitions/transition.html"
-                  id="home"
-                  className="inline-block px-4 py-2 rounded-xl bg-slate-100 text-black hover:bg-slate-500 hover:text-white"
-                >
-                  Test
                 </a>
               </li>
             </div>
