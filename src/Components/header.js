@@ -16,11 +16,13 @@ export default function Header() {
 
   return (
     <div className="fixed w-full z-50 flex items-center justify-between bg-white text-black py-2 px-10 sm:px-16 top-0">
-      <img
-        src={require("../design/logo.png")}
-        className="w-18.08 h-20"
-        alt="logo"
-      />
+      <a href="/" id="home">
+        <img
+          src={require("../design/logo.png")}
+          className="buttons w-18.08 h-20"
+          alt="logo"
+        />
+      </a>
       <nav>
         <section className="flex">
           <button
@@ -99,7 +101,7 @@ export default function Header() {
               </li>
               <li className="text-4xl cursor-pointer">
                 <a
-                  href="./transitions/index6.html"
+                  href="./transitions/transition.html"
                   id="home"
                   className="inline-block px-4 py-2 rounded-xl bg-slate-100 text-black hover:bg-slate-500 hover:text-white"
                 >

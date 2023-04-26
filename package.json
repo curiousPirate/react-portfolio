@@ -13,6 +13,7 @@
     "react-router-dom": "^6.10.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
+    "react-spinners": "^0.13.8",
     "typed.js": "^2.0.15"
   },
   "scripts": {
@@ -38,7 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
   }
 }

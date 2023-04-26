@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
-// import { gsap } from "gsap";
 // Cell class definition
+
 class Cell {
   DOM = {
     el: null,
