@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import Typed from "typed.js";
 import SatelliteMotion from "./satellitemotion";
 import UFOMotion from "./ufomotion";
-import "./transition.js";
 
 
 const Home = () => {
@@ -52,7 +51,6 @@ const Home = () => {
               </span>
             </Link>
           </span>
-          <button className="animateButtons">test</button>
           <span className="my-4 mx-4">
             <Link
               to="/projects"

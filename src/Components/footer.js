@@ -24,20 +24,9 @@ const Footer = () => {
             <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
             <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
             <span className="relative text-black group-hover:text-white">
-              Hire Me!
+              Let's Talk!
             </span>
           </Link>
-          <Link
-            to="/projects"
-            className="relative inline-block px-4 py-2 font-medium group"
-          >
-            <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-            <span className="relative text-black group-hover:text-white">
-              Projects
-            </span>
-          </Link>
-
         <a href="/" className="icon linkedin" title="LinkedIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
