@@ -38,9 +38,6 @@ function Contact() {
   return (
     <div
       className="h-screen bg-cover bg-center bg-no-repeat m-0 overflow-hidden text-center text-white"
-      style={{
-        backgroundImage: `url(${require("../design/space.avif")})`,
-      }}
     >
       <div
         className="w-full p-6 flex flex-col xl:items-stretch justify-between xl:flex-row"

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-gray-400 py-6 fixed bottom-0 w-full">
+    <footer className="fixed bg-gray-800 text-gray-400 py-6  bottom-0 w-full">
       <div className="flex space-x-4 justify-around">
         <a href="/" title="GitHub">
           <svg

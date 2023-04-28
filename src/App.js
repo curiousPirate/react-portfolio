@@ -5,6 +5,7 @@ import Footer from "./Components/footer.js";
 import RingLoader from "react-spinners/RingLoader";
 
 const Home = lazy(() => import("./Components/home.js"));
+const Projects = lazy(() => import("./Components/projects.js"));
 const About = lazy(() => import("./Components/about.js"));
 const Contact = lazy(() => import("./Components/contact.js"));
 
@@ -20,7 +21,7 @@ const App = () => {
 
   const LoadingIndicator = () => (
     <div className="loading">
-      <RingLoader color={"#426b80"} loading={loading} size={60} />
+      <RingLoader color={"#102a43"} loading={loading} size={60} />
     </div>
   );
 
@@ -31,6 +32,7 @@ const App = () => {
         <Suspense fallback={<LoadingIndicator />}>
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
