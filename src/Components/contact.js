@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import SatelliteMotion from "./satellitemotion";
 
 
 
@@ -36,9 +37,7 @@ function Contact() {
 
 
   return (
-    <div
-      className="h-screen bg-cover bg-center bg-no-repeat m-0 overflow-hidden text-center text-white"
-    >
+    <div className="h-screen bg-cover bg-center bg-no-repeat m-0 overflow-hidden text-center text-white">
       <div
         className="w-full p-6 flex flex-col xl:items-stretch justify-between xl:flex-row"
         id="newsletter"
@@ -100,6 +99,7 @@ function Contact() {
               </button>
             </span>
           </form>
+          <SatelliteMotion />
         </div>
       </div>
     </div>

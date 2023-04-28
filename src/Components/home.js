@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
-import SatelliteMotion from "./satellitemotion";
+import { ReactComponent as Svg } from "../design/bg.svg";
 
 
 const Home = () => {
@@ -18,8 +18,8 @@ const Home = () => {
 
 
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="md:w-1/2 flex flex-wrap justify-center flex-col p-8 pt-20 lg:pt-0 bg-[#102a43] text-teal-500 ">
+    <div className="flex flex-col md:flex-row z-1000">
+      <div className="md:w-1/2 flex flex-wrap justify-center flex-col p-8 pt-20 lg:pt-0 bg-[#102a43] text-teal-500">
         <h1 className="text-4xl font-bold">Hello! I'm Chaitanya,</h1>
         <h2 className="text-xl py-4">
           Expertise in: <br />
@@ -42,7 +42,8 @@ const Home = () => {
           className="object-contain w-full h-full"
           alt="chaitanya"
         />
-        <SatelliteMotion />
+        <Svg className="fixed top-0 left-200"
+        />
       </div>
     </div>
   );
