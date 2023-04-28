@@ -9,6 +9,7 @@ const Projects = lazy(() => import("./Components/projects.js"));
 const About = lazy(() => import("./Components/about.js"));
 const Contact = lazy(() => import("./Components/contact.js"));
 
+
 const App = () => {
   const [loading, setLoading] = useState(false);
 

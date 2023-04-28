@@ -3,7 +3,6 @@ import emailjs from "emailjs-com";
 import SatelliteMotion from "./satellitemotion";
 
 
-
 function Contact() {
 
   const [email, setEmail] = useState("");
@@ -13,8 +12,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    emailjs.sendForm(
         "service_cibo1ek",
         "template_gwkv6pb",
         e.target,
@@ -22,7 +20,6 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setEmail("");
           setName("");
           setMessage("");
@@ -37,56 +34,54 @@ function Contact() {
 
 
   return (
-    <div className="h-screen bg-cover bg-center bg-no-repeat m-0 overflow-hidden text-center text-white">
+    <div className="h-screen bg-[#102a43]">
       <div
-        className="w-full p-6 flex flex-col xl:items-stretch justify-between xl:flex-row"
+        className="w-full px-10 flex flex-col xl:items-stretch justify-between xl:flex-row"
         id="newsletter"
       >
-        <div className="w-full xl:pl-10 xl:py-28">
-          <h1 className="text-4xl md:text-4xl xl:text-5xl font-bold leading-10 text-slate-950 mb-4 xl:text-left md:mt-0 mt-20">
+        <div className="w-full xl:pl-10 mt-10">
+          <h1 className="text-4xl md:text-4xl xl:text-5xl font-bold mb-4 xl:text-left text-teal-500">
             Let's Talk!
           </h1>
           <form
             onSubmit={handleSubmit}
             className="flex flex-col w-full max-w-md"
           >
-            <label htmlFor="email" className="text-sm font-bold mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="shadow bg-gray-100 text-base rounded-xl text-cyan-950 w-full p-5 leading-tight caret-cyan-950"
-              required
-            />
-            <label htmlFor="name" className="text-sm font-bold mb-2 mt-4">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="shadow bg-gray-100 text-base rounded-xl text-cyan-950 w-full p-5 leading-tight caret-cyan-950"
-              required
-            />
-            <label htmlFor="message" className="text-sm font-bold mb-2 mt-4">
-              Message
-            </label>
-            <textarea
-              name="message"
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="shadow bg-gray-100 text-base rounded-xl text-cyan-950 w-full p-5 leading-tight caret-cyan-950"
-              rows="5"
-              required
-            />
-            <span className="my-4 mx-4">
+            <div className="inputBox mt-10">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="rounded-xl w-full p-5 leading-tight text-lg"
+                required="required"
+              />
+              <span htmlFor="email">Email</span>
+            </div>
+            <div className="inputBox mt-10">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="rounded-xl w-full p-5 leading-tight"
+                required="required"
+              />
+              <span htmlFor="name">Name</span>
+            </div>
+            <div className="inputBox my-10" id="msgField">
+              <textarea
+                name="message"
+                id="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="rounded-xl w-full p-5 h-32 leading-tight"
+              />
+              <span htmlFor="message">Message</span>
+            </div>
+            <span>
               <button
                 type="submit"
                 className="relative inline-block px-4 py-2 font-medium group w-full"
