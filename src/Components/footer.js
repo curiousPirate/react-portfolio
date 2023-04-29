@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="fixed bg-gray-800 text-gray-400 py-6  bottom-0 w-full">
+    <footer className="fixed bg-[#8d286f] opacity-80 text-gray-400 py-3  bottom-0 w-full">
       <div className="flex space-x-4 justify-around">
         <a href="/" title="GitHub">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-6 w-6"
             fill="currentColor"
             style={{ color: "#fffff" }}
             viewBox="0 0 24 24"
@@ -17,20 +17,20 @@ const Footer = () => {
           </svg>
         </a>
 
-          <Link
-            to="/contact"
-            className="relative inline-block px-4 py-2 font-medium group"
-          >
-            <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-            <span className="relative text-black group-hover:text-white">
-              Let's Talk!
-            </span>
-          </Link>
+        <Link
+          to="/contact"
+          className="relative inline-block px-4 py-2 font-medium group"
+        >
+          <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+          <span className="absolute inset-0 w-full h-full bg-teal-500 border-2 border-black group-hover:bg-black"></span>
+          <span className="flex relative justify-center text-white  group-hover:text-white">
+            Let's Talk!
+          </span>
+        </Link>
         <a href="/" className="icon linkedin" title="LinkedIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-6 w-6"
             fill="currentColor"
             style={{ color: "#0077b5" }}
             viewBox="0 0 24 24"

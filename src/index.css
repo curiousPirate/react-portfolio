@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
-  background-color: #102a43;
+  background-color: #001129;
 }
 
 .satellite {
@@ -40,7 +40,7 @@ body {
 
 .inputBox input, textarea {
   border: rgba(255, 255, 255, 0.25) 1px solid;
-  background-color: #102a43;
+  background-color: #001129;
   outline: none;
   color: white;
   padding: 20px;

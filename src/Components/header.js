@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <div className="w-full z-50 flex items-center justify-between bg-[#102a43] text-black py-2 pr-20 pl-10 sm:pr-28 top-0">
+    <div className="w-full z-50 flex items-center justify-between bg-[#000823] py-2 pr-20 pl-10 sm:pr-28 top-0">
       <a href="/" id="home">
         <Logo className="buttons w-18.08 h-20" />
       </a>
@@ -61,7 +61,7 @@ export default function Header() {
                   id="home"
                   className="px-4 py-2 text-white hover:text-teal-500"
                 >
-                  Home
+                  &lt; Home &gt;
                 </a>
               </li>
               <li className="my-8 text-4xl cursor-pointer">
@@ -70,7 +70,7 @@ export default function Header() {
                   className="px-4 py-2 text-white hover:text-teal-500"
                   onClick={closeMenu}
                 >
-                  Projects
+                  &lt; Projects &gt;
                 </a>
               </li>
               <li className="my-8 text-4xl cursor-pointer">
@@ -79,7 +79,7 @@ export default function Header() {
                   className="px-4 py-2 text-white hover:text-teal-500"
                   onClick={closeMenu}
                 >
-                  About
+                  &lt; About &gt;
                 </a>
               </li>
               <li className="my-8 text-4xl cursor-pointer">
@@ -88,7 +88,7 @@ export default function Header() {
                   className="px-4 py-2 text-white hover:text-teal-500"
                   onClick={closeMenu}
                 >
-                  Get in Touch!
+                  &lt; Get In Touch! &gt;{" "}
                 </a>
               </li>
             </div>
