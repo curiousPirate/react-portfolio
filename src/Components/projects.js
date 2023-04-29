@@ -44,11 +44,11 @@ const projectsData = [
 
 function Projects() {
   return (
-    <div className="bg-sky-950">
+    <div className="bg-[#001129]">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            My Projects
+          <h2 className="text-3xl font-extrabold text-teal-500 sm:text-4xl pt-10">
+            &lt; PROJECTS &gt;
           </h2>
         </div>
         <motion.div
