@@ -15,8 +15,8 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "This is project 2.",
+    title: "Movie Mate",
+    description: "One place to stay updated with latest movies, shows and never miss out the movies experience near you! Get personalised results based on your location to know",
     skills: "Python, Django, HTML, CSS",
     image: "/project2.jpg",
     projectLink: "https://project2.com",

@@ -1,10 +1,15 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
+
   return (
-    <footer className="fixed bg-[#8d286f] opacity-80 text-gray-400 py-3  bottom-0 w-full">
-      <div className="flex space-x-4 justify-around">
+    <footer
+      className="fixed bg-[#8d286f] opacity-80 text-gray-400 py-3  bottom-0 w-full"
+      style={{ zIndex: "20" }}
+    >
+      <div className="flex space-x-4 justify-around items-center">
         <a href="/" title="GitHub">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +45,7 @@ const Footer = () => {
         </a>
       </div>
     </footer>
-  );};
+  );
+};
 
-  export default Footer;
-
+export default Footer;
