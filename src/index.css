@@ -9,6 +9,11 @@ body {
   background-color: aquamarine;
 }
 
+::selection {
+  background-color: aquamarine;
+  color: #102a43;
+}
+
 .loading {
   display: flex;
   align-items: center;

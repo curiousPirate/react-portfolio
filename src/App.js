@@ -1,5 +1,5 @@
 import React, { lazy, useState, useEffect, Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/header.js";
 import Footer from "./Components/footer.js";
 import RingLoader from "react-spinners/RingLoader";
@@ -8,7 +8,6 @@ const Home = lazy(() => import("./Components/home.js"));
 const Projects = lazy(() => import("./Components/projects.js"));
 const About = lazy(() => import("./Components/about.js"));
 const Contact = lazy(() => import("./Components/contact.js"));
-
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -27,20 +26,20 @@ const App = () => {
   );
 
   return (
-    <Router>
+    <HashRouter>
       <div>
         <Header />
         <Suspense fallback={<LoadingIndicator />}>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/projects" element={<Projects />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../design/logo.svg";
 
 
@@ -17,9 +18,9 @@ export default function Header() {
 
   return (
     <div className="w-full z-50 flex items-center justify-between bg-[#000823] py-2 pr-20 pl-10 sm:pr-28 top-0">
-      <a href="/" id="home">
+      <Link to="/" id="home">
         <Logo className="buttons w-18.08 h-20" />
-      </a>
+      </Link>
       <nav>
         <section className="flex">
           <button
@@ -56,40 +57,41 @@ export default function Header() {
           >
             <div className="border-4 border-transparent border-l-teal-500 p-6">
               <li className="text-4xl cursor-pointer">
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   id="home"
                   className="px-4 py-2 text-white hover:text-teal-500"
+                  onClick={closeMenu}
                 >
                   &lt; Home &gt;
-                </a>
+                </Link>
               </li>
               <li className="my-8 text-4xl cursor-pointer">
-                <a
-                  href="/projects"
+                <Link
+                  to="/projects"
                   className="px-4 py-2 text-white hover:text-teal-500"
                   onClick={closeMenu}
                 >
                   &lt; Projects &gt;
-                </a>
+                </Link>
               </li>
               <li className="my-8 text-4xl cursor-pointer">
-                <a
-                  href="/about"
+                <Link
+                  to="/about"
                   className="px-4 py-2 text-white hover:text-teal-500"
                   onClick={closeMenu}
                 >
                   &lt; About &gt;
-                </a>
+                </Link>
               </li>
               <li className="my-8 text-4xl cursor-pointer">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="px-4 py-2 text-white hover:text-teal-500"
                   onClick={closeMenu}
                 >
-                  &lt; Get In Touch! &gt;{" "}
-                </a>
+                  &lt; Get In Touch! &gt;
+                </Link>
               </li>
             </div>
           </ul>

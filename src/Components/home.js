@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     var typed = new Typed(".auto-type", {
       strings: [
-        "React Front-End Development, Designing, Agile Project Management Customer Success.",
+        "React Front-End Development, Designing, Agile Project Management, Customer Success.",
       ],
       typeSpeed: 30,
       backSpeed: 0,
