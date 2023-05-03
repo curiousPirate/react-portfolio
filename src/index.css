@@ -3,10 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
-  background-color: aquamarine;
+  background-color: #7fffd4;
+  bottom: -200px;
 }
 
 ::selection {
@@ -64,7 +66,7 @@ body {
   font-size: 1em;
   text-transform: uppercase;
   pointer-events: none;
-  color: rgba(255, 255, 255,0.25);
+  color: rgba(127, 255, 212, 0.30);
   transition: 0.2s;
 }
 
@@ -77,10 +79,10 @@ body {
   border-left: aquamarine 1px solid;
   border-right: aquamarine 1px solid;
   letter-spacing: 0.2em;
+  color: aquamarine;
 }
 
 .inputBox textarea:focus ~ span {
-    color: aquamarine;
     transform: translateX(10px) translateY(-7px);
     font-size: 0.75em;
     padding: 0 10px;
@@ -96,4 +98,5 @@ body {
 .inputBox input:focus,
 .inputBox textarea:focus {
   border: 3px solid aquamarine;
+  
 }

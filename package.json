@@ -3,19 +3,23 @@
   "version": "1.0",
   "private": true,
   "dependencies": {
+    "@svg-drawing/react": "^5.0.1-beta.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@xobotyi/scrollbar-width": "^1.9.5",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.12.4",
     "gsap": "^3.11.5",
     "react": "^18.2.0",
     "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.3",
     "react-router-dom": "^6.10.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
     "react-spinners": "^0.13.8",
+    "react-use": "^17.4.0",
     "typed.js": "^2.0.15"
   },
   "scripts": {

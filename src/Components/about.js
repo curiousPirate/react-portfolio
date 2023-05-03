@@ -1,10 +1,11 @@
-import { ReactComponent as Svg } from "../design/bg.svg";
+
 
 const About = () => {
+
+
   return (
     <div>
-      <h1>HI</h1>
-      <Svg />
+      <h1>About Me</h1>
     </div>
   );
 };
