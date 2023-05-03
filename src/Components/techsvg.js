@@ -1,12 +1,12 @@
 export default function TechSVG () {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row pt-5" style={{ zIndex: 20 }}>
       <svg
-        width="180"
-        height="180"
+        width="260"
+        height="260"
         viewBox="0 0 260 260"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+        style={{ marginLeft: "auto" }}
       >
         <path
           d="M93.9281 166.034L85.9067 76H174.093L166.072 165.985L129.927 176"
@@ -22,13 +22,7 @@ export default function TechSVG () {
           fill="white"
         />
       </svg>
-      <svg
-        width="180"
-        height="180"
-        viewBox="0 0 260 260"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
         <path
           d="M175.192 76L167.159 165.99L131.051 176L95.0415 166.004L87.017 76H175.192Z"
           fill="#264DE4"
@@ -54,13 +48,7 @@ export default function TechSVG () {
           fill="white"
         />
       </svg>
-      <svg
-        width="180"
-        height="180"
-        viewBox="0 0 260 260"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -68,25 +56,13 @@ export default function TechSVG () {
           fill="#7952B3"
         />
       </svg>
-      <svg
-        width="180"
-        height="180"
-        viewBox="0 0 260 260"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
         <path
           d="M130.828 96.4933C117.495 96.4933 109.161 103.158 105.828 116.487C110.828 109.822 116.662 107.324 123.328 108.989C127.132 109.94 129.851 112.699 132.86 115.753C137.762 120.727 143.436 126.484 155.829 126.484C169.161 126.484 177.496 119.819 180.828 106.489C175.829 113.154 169.996 115.654 163.328 113.989C159.525 113.038 156.807 110.278 153.797 107.225C148.895 102.25 143.221 96.4933 130.828 96.4933ZM105.828 126.484C92.4952 126.484 84.1609 133.149 80.8284 146.479C85.8277 139.814 91.6612 137.315 98.3287 138.982C102.131 139.933 104.85 142.692 107.86 145.744C112.762 150.718 118.436 156.477 130.828 156.477C144.162 156.477 152.495 149.812 155.829 136.482C150.828 143.147 144.995 145.647 138.329 143.98C134.525 143.031 131.806 140.27 128.796 137.217C123.895 132.243 118.221 126.484 105.828 126.484Z"
           fill="#06B6D4"
         />
       </svg>
-      <svg
-        width="180"
-        height="180"
-        viewBox="0 0 260 260"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
         <path
           d="M114.162 176C123.362 176 130.828 168.533 130.828 159.333V142.667H114.162C104.962 142.667 97.4951 150.133 97.4951 159.333C97.4951 168.533 104.962 176 114.162 176Z"
           fill="#0ACF83"
@@ -108,13 +84,7 @@ export default function TechSVG () {
           fill="#1ABCFE"
         />
       </svg>
-      <svg
-        width="180"
-        height="180"
-        viewBox="0 0 260 260"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
         <path
           d="M180.552 75.5942H80.5522V175.594H180.552V75.5942Z"
           fill="#F7DF1E"
@@ -124,13 +94,7 @@ export default function TechSVG () {
           fill="black"
         />
       </svg>
-      <svg
-        width="180"
-        height="180"
-        viewBox="0 0 260 260"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="260" height="260" viewBox="0 0 260 260" fill="none">
         <path
           d="M131.105 134.411C135.974 134.411 139.921 130.463 139.921 125.594C139.921 120.725 135.974 116.778 131.105 116.778C126.235 116.778 122.288 120.725 122.288 125.594C122.288 130.463 126.235 134.411 131.105 134.411Z"
           fill="#61DAFB"
@@ -152,11 +116,10 @@ export default function TechSVG () {
         />
       </svg>
       <svg
-        width="180"
-        height="180"
+        width="260"
+        height="260"
         viewBox="0 0 260 260"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M147.46 143.605H138.683L137.949 142.872V122.326C137.949 118.671 136.513 115.837 132.105 115.738C129.836 115.679 127.241 115.738 124.467 115.847L124.051 116.273V124.575V142.862L123.318 143.595H114.541L113.808 142.862V107.764L114.541 107.031H134.294C141.971 107.031 148.193 113.252 148.193 120.929V142.872L147.46 143.605Z"

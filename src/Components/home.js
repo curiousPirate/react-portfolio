@@ -24,16 +24,17 @@ const Home = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="md:w-1/2 flex flex-col px-8 bg-[#001129] text-teal-500 ">
-        <h1 className="text-4xl font-bold mt-40 lg:mt-30 text-[#8d286f]">
+        <h1 className="text-4xl font-bold mt-10 lg:mt-40 text-[#8d286f]">
           Hello! I'm Chaitanya,
         </h1>
         <h2 className="text-xl py-4 h-12 font-extrabold">
           Expertise in: <br />
           <span className="auto-type"></span>
         </h2>
+        <TechSVG />
         <Link
           to="/projects"
-          className="relative inline-block px-2 py-2 font-medium group mt-24"
+          className="relative inline-block px-2 py-2 font-medium group"
           style={{ zIndex: "20" }}
         >
           <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
@@ -42,7 +43,6 @@ const Home = () => {
             &lt;GET STARTED /&gt;
           </span>
         </Link>
-        <TechSVG />
       </div>
       <div className="md:w-1/2">
         <img
@@ -50,10 +50,7 @@ const Home = () => {
           className="object-contain"
           alt="chaitanya"
         />
-        <Svg
-          className="fixed top-0 left-200"
-          style={{ zIndex: "10" }}
-        />
+        <Svg className="fixed top-0 left-200" style={{ zIndex: "0" }} />
       </div>
     </div>
   );
