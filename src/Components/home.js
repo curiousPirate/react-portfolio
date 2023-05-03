@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
 import { ReactComponent as Svg } from "../design/bg.svg";
+import TechSVG from "./techsvg";
 
 
 const Home = () => {
@@ -41,16 +42,16 @@ const Home = () => {
             &lt;GET STARTED /&gt;
           </span>
         </Link>
+        <TechSVG />
       </div>
       <div className="md:w-1/2">
         <img
           src={require("../design/chaitanya.jpg")}
-          className="object-contain w-full h-full"
+          className="object-contain"
           alt="chaitanya"
         />
         <Svg
           className="fixed top-0 left-200"
-          repeatCount="indefinite"
           style={{ zIndex: "10" }}
         />
       </div>

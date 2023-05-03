@@ -90,7 +90,7 @@ function Projects() {
                 <div className="py-4 px-6">
                   <h2 className="text-lg font-bold mb-2">{project.title}</h2>
                   <p className="text-gray-700 text-base">
-                    <bold> Introduction: {project.description} </bold>
+                    Introduction: {project.description} 
                     {project.userStory}
                     {project.whyRequired}
                     {project.challenges}
