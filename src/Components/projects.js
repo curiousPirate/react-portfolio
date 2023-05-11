@@ -82,15 +82,17 @@ function Projects() {
                 className="bg-white shadow-lg rounded-lg overflow-hidden"
                 whileHover={{ y: -10 }}
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-96 object-cover"
-                />
+                <div className="screen">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-96 object-cover"
+                  />
+                </div>
                 <div className="py-4 px-6">
                   <h2 className="text-lg font-bold mb-2">{project.title}</h2>
                   <p className="text-gray-700 text-base">
-                    Introduction: {project.description} 
+                    Introduction: {project.description}
                     {project.userStory}
                     {project.whyRequired}
                     {project.challenges}

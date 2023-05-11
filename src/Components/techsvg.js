@@ -1,12 +1,11 @@
 export default function TechSVG () {
   return (
-    <div className="flex flex-row pt-5" style={{ zIndex: 20 }}>
+    <div className="flex flex-row" style={{ zIndex: 20 }}>
       <svg
         width="260"
         height="260"
         viewBox="0 0 260 260"
         fill="none"
-        style={{ marginLeft: "auto" }}
       >
         <path
           d="M93.9281 166.034L85.9067 76H174.093L166.072 165.985L129.927 176"
