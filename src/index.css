@@ -134,3 +134,7 @@ body {
   -o-transition: all 11s;
   transition: all 11s;
 }
+
+.\!absolute {
+  position: fixed !important;
+}
