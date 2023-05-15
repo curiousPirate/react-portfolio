@@ -1,4 +1,8 @@
 {
   "liveServer.settings.port": 5501,
-  "svg.preview.background": "transparent"
+  "svg.preview.background": "transparent",
+  "cSpell.words": [
+    "btns",
+    "imgs"
+  ]
 }
