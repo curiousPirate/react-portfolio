@@ -42,7 +42,6 @@ body {
 }
 
 .inputBox {
-
   position: relative;
 }
 
@@ -144,7 +143,6 @@ body {
   bottom: 5rem;
 }
 
-button > .text-white {
-  --tw-text-opacity: 1;
-  color: rgb(127 255 212 / var(--tw-text-opacity));
+button.text-white {
+  color: rgb(127 255 212);
 }
