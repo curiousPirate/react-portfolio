@@ -6,12 +6,15 @@ const Footer = () => {
 
   return (
     <footer
-      className="fixed bottom-0 bg-[#8d286f] opacity-80 py-3 w-full"
+      className="fixed bottom-0 bg-[#8d286f]/80 py-3 w-full content-container"
       style={{ zIndex: "20" }}
     >
       <div className="flex space-x-4 justify-around items-center">
-        <Link to="https://github.com/curioushumans" title="GitHub"
-        target="_blank">
+        <Link
+          to="https://github.com/curioushumans"
+          title="GitHub"
+          target="_blank"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"

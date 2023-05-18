@@ -57,7 +57,7 @@ const projectsData = [
 
 export default function About() {
   return (
-    <Carousel className="bg-[#001129]">
+    <Carousel className=" bg-[#001129]">
       {projectsData.map((project) => (
         <motion.div className="p-4 w-full" key={project.id}>
           <h1 className="text-center text-4xl text-teal-500 py-5">
@@ -77,26 +77,43 @@ export default function About() {
             </div>
           </motion.div>
           <div className="py-4 pb-28 px-6">
-            <h2 className="text-lg font-bold mb-2">{project.title}</h2>
-            <p className="text-gray-700 text-base">
-              Introduction: {project.description}
-              {project.userStory}
-              {project.whyRequired}
-              {project.challenges}
-              {project.designIssues}
-              {project.futureDevelopment}
+            <a
+              href={project.projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center py-4 md:py-8 font-bold"
+            >
+              <span className="text-4xl md:text-6xl text-[#8d286f] first-letter:text-7xl inline-block">
+                {project.title}
+              </span>
+            </a>
+            <p className="text-base md:text-lg text-teal-500 text-justify">
+              <span className="block mt-4 text-lg font-bold first-letter:text-[#8d286f]  ">
+                Introduction:
+              </span>
+              <span className="block mx-4">
+                {project.description}
+                {project.userStory}
+                {project.whyRequired}
+                {project.challenges}
+                {project.designIssues}
+                {project.futureDevelopment}
+              </span>
             </p>
-            <div className="flex justify-between mt-4">
-              <div>
-                <h4 className="text-gray-500">Skills &amp; Technologies:</h4>
-                <p>{project.skills}</p>
+
+            <div className="flex flex-col md:flex-row justify-between mt-4">
+              <div className="mb-4 md:mb-0">
+                <h4 className="text-gray-500 text-lg font-semibold">
+                  Skills &amp; Technologies:
+                </h4>
+                <p className="text-sm">{project.skills}</p>
               </div>
               <div className="flex">
                 <a
                   href={project.projectLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 mr-2"
+                  className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 mr-2 text-sm"
                 >
                   View Project
                 </a>
@@ -104,7 +121,7 @@ export default function About() {
                   href={project.repoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-700"
+                  className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 text-sm"
                 >
                   View Code
                 </a>
