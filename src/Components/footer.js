@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="fixed bottom-0 bg-[#8d286f]/80 py-3 w-full content-container"
+      className="fixed bottom-0 bg-[#8d286f] opacity-80 py-3 w-full content-container"
       style={{ zIndex: "20" }}
     >
       <div className="flex space-x-4 justify-around items-center">
