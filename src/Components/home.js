@@ -25,7 +25,7 @@ const Home = () => {
           <h1 className="text-4xl font-bold mt-10 lg:mt-40 text-[#8d286f]">
             Hello! I'm Chaitanya,
           </h1>
-          <h2 className="text-xl py-4 h-12 font-extrabold">
+          <h2 className="text-xl py-4 h-8 font-extrabold">
             Expertise in: <br />
             <span className="auto-type"></span>
           </h2>
