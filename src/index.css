@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* body styles */
 body {
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
@@ -55,11 +55,11 @@ body {
   outline: none;
   color: white;
   padding: 20px;
-  transition: 0.5s;
   font-size: 1em;
   cursor: pointer;
   width: 300px;
   box-sizing: border-box;
+  transition: border-color 0.5s, background-color 0.5s, transform 0.2s;
 }
 
 .inputBox span {
@@ -70,7 +70,9 @@ body {
   text-transform: uppercase;
   pointer-events: none;
   color: rgba(127, 255, 212, 0.30);
-  transition: 0.5s;
+    transition: transform 0.5s, font-size 0.5s, padding 0.5s,
+    background-color 0.5s, border-left-color 0.5s, border-right-color 0.5s,
+    letter-spacing 0.5s, color 0.5s;
 }
 
 .inputBox input:valid ~ span,
@@ -95,13 +97,14 @@ body {
     color: #102a43;
     letter-spacing: 0.2em;
     top: 0;
-    transition: 0.2s;
+      transition: transform 0.2s, font-size 0.2s, padding 0.2s,
+    background-color 0.2s, color 0.2s;
 }
 
 .inputBox input:valid,
 .inputBox input:focus,
 .inputBox textarea:focus {
-  border: 3px solid aquamarine;
+  border-color: aquamarine;
 }
 
 
@@ -148,13 +151,15 @@ body {
 
 .bottom-4 {
   bottom: 5rem;
+  display: none;
 }
 
 button.text-white {
   color: rgb(127 255 212);
 }
 
-.content-container {
-  backdrop-filter: blur(500px);
-
+.project-card {
+  height: 728px;
+  display: flex;
+  flex-direction: column;
 }

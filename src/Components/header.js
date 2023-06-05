@@ -17,7 +17,7 @@ export default function Header() {
   };
 
   return (
-    <div className="w-full z-50 flex items-center justify-between bg-[#000823] py-2 pr-20 pl-10 sm:pr-28 top-0">
+    <div className="w-full z-50 flex items-center justify-between bg-[#020617] py-2 pr-20 pl-10 sm:pr-28 top-0">
       <Link to="/" id="home">
         <Logo className="buttons w-18.08 h-20" />
       </Link>
