@@ -4,31 +4,15 @@ import { motion } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-
     title: "Let's Go Party!",
-
     description:
-      "Let's Go Party is a React web application that makes it easy for users to discover and plan for events and restaurants in their area or when they travel to new places. With powerful search filters and a user-friendly interface, Let's Go Party makes it easy to find the hottest food events, raves, concerts, clubs, and more.",
-
-    userStory:
-      "As a traveler or local, you want to be able to easily find the best events and restaurants in your area or a new city so that you can plan the perfect weekend or night out. Let's Go Party provides you with all the information you need to discover the hottest events and the best restaurants enjoyed by the locals.",
-
-    whyRequired:
-      "Many people struggle to find the best events and restaurants in their area or when they travel to new places. Let's Go Party addresses this problem by providing a comprehensive database of events and restaurants, and powerful search filters that make it easy to find exactly what you're looking for.",
-
-    challenges:
-      "While developing Let's Go Party, we faced a number of technical challenges. One of the biggest was the CORS issue, which prevented the web application from accessing data from a different domain. To overcome this issue, we used Express.js as a proxy to make requests to the API from the server-side instead of the client-side. This allowed us to bypass the CORS issue and retrieve the data needed for the application. Another challenge we faced was with saved events not auto-updating. To solve this issue, we created a setTimeout function that periodically checked the local storage for changes in saved events and updated the UI accordingly.",
-
-    designIssues:
-      "In terms of design, our main challenge was to create a user interface that was simple and intuitive while also providing enough detail to help users make informed decisions about which events or restaurants to attend. We overcame this challenge by incorporating a clean and modern design, with a simple search bar, filter options, and clear calls-to-action such as the Save and Subscribe buttons.",
-
+      "Many people struggle to find the best events and restaurants in their area or when they travel to new places. Let's Go Party addresses this problem by providing a comprehensive database of events and restaurants, and powerful search filters that make it easy to find exactly what you're looking for. Let's Go Party is a React web application using tailwind and with powerful search filters and a user-friendly interface, Let's Go Party makes it easy to find the hottest food events, raves, concerts, clubs, and more.",
     futureDevelopment:
       "As for future development, we plan to make Let's Go Party a more social platform by adding a Share button that allows users to easily share events or restaurants with friends. We also plan to introduce a chat feature that will allow users to communicate and coordinate with their friends or other attendees of the events. Additionally, we aim to expand our database and incorporate more niche or lesser-known events and restaurants to provide even more value to our users.",
-
-    skills: "React, JavaScript, CSS",
+    skills: "React, Tailwind, Node.JS, SerpApi, email.JS.",
     image: require("../design/letsgoparty.png"),
-    projectLink: "https://project1.com",
-    repoLink: "https://github.com/project1",
+    projectLink: "https://letsgoparty.netlify.app/",
+    repoLink: "https://github.com/curiousPirate/letsgoparty",
   },
 
   {
@@ -84,45 +68,41 @@ export default function About() {
                 {project.title}
               </span>
             </a>
-            <p className="text-base md:text-lg text-teal-500 text-justify">
-              <span className="block mt-4 text-lg font-bold first-letter:text-[#8d286f]  ">
+            <div className="text-base md:text-lg text-teal-500 text-justify">
+              <span className="block mt-4 mx-4 text-3xl font-bold first-letter:text-[#8d286f] underline">
                 Introduction:
               </span>
-              <span className="block mx-4">
+              <span className="block m-4 first-letter:text-4xl first-letter:font-bold first-letter:mr-2 first-letter:float-left">
                 {project.description}
-                {project.userStory}
-                {project.whyRequired}
-                {project.challenges}
-                {project.designIssues}
+              </span>
+              <span className="block mt-4 mx-4 text-3xl font-bold first-letter:text-[#8d286f] underline">
+                Future Development:
+              </span>
+              <span className="block m-4 first-letter:text-4xl first-letter:font-bold first-letter:mr-2 first-letter:float-left">
                 {project.futureDevelopment}
               </span>
-            </p>
-
-            <div className="flex flex-col md:flex-row justify-between mt-4">
-              <div className="mb-4 md:mb-0">
-                <h4 className="text-gray-500 text-lg font-semibold">
-                  Skills &amp; Technologies:
-                </h4>
-                <p className="text-sm">{project.skills}</p>
-              </div>
-              <div className="flex">
-                <a
-                  href={project.projectLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 mr-2 text-sm"
-                >
-                  View Project
-                </a>
-                <a
-                  href={project.repoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 text-sm"
-                >
-                  View Code
-                </a>
-              </div>
+              <span className="block mt-4 mx-4 text-3xl font-bold first-letter:text-[#8d286f] underline text-left">
+                Skills &amp; Technologies:
+              </span>
+              <span className="block m-4 text-left">{project.skills}</span>
+            </div>
+            <div className="flex">
+              <a
+                href={project.projectLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#8d286f] m-4 text-white px-4 py-2 rounded-md hover:bg-teal-500 mr-2 text-sm"
+              >
+                Live Site
+              </a>
+              <a
+                href={project.repoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-teal-500 m-4 text-white px-4 py-2 rounded-md hover:bg-[#8d286f] text-sm"
+              >
+                View Code
+              </a>
             </div>
           </div>
         </motion.div>

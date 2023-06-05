@@ -10,7 +10,7 @@ body {
   background-color: #7fffd4;
 }
 
-
+/* text selection style */
 ::selection {
   background-color: aquamarine;
   color: #102a43;
@@ -122,7 +122,6 @@ body {
   width: 100%;
   height: auto;
   position: absolute;
-
   z-index: 0;
   margin: 0;
   padding: 0;

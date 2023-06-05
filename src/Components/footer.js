@@ -7,11 +7,11 @@ const Footer = () => {
   return (
     <footer
       className="fixed bottom-0 bg-[#8d286f] opacity-80 py-3 w-full content-container"
-      style={{ zIndex: "20" }}
+      style={{ zIndex: "200" }}
     >
       <div className="flex space-x-4 justify-around items-center">
         <Link
-          to="https://github.com/curioushumans"
+          to="https://github.com/curiousPirate"
           title="GitHub"
           target="_blank"
         >

@@ -51,7 +51,7 @@ export default function Header() {
 
           <ul
             id="menu"
-            className={`flex flex-col items-center justify-between min-h-[250px] ${
+            className={`flex flex-col items-center justify-between min-h-[250px]  ${
               isNavOpen ? "showMenuNav" : "hideMenuNav"
             }`}
           >
@@ -60,7 +60,7 @@ export default function Header() {
                 <Link
                   to="/"
                   id="home"
-                  className="px-4 py-2 text-white hover:text-teal-500"
+                  className="px-4 py-2 text-white hover:text-teal-500 animate-[fade-in_1s_ease-in-out]"
                   onClick={closeMenu}
                 >
                   &lt; Home &gt;

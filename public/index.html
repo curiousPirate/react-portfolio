@@ -17,15 +17,18 @@
   </main>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, 
+  var Tawk_API=Tawk_API||{},
+
   Tawk_LoadStart=new Date();
     Tawk_API.customStyle = {
+      
       visibility: {
         //for desktop only
         desktop: {
           position: 'br', // bottom-right
           xOffset: 15, // 15px away from right
-          yOffset: 70 // 40px up from bottom
+          yOffset: 70, // 40px up from bottom
+          zIndex: 1
         },
         // for mobile only
         mobile: {
@@ -33,7 +36,8 @@
           xOffset: 15, // 5px away from left
           yOffset: 70 // 50px up from bottom
         }
-      }
+      },
+      zIndex : 2
     };
   (function(){
   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
