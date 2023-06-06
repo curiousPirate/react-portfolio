@@ -17,3 +17,5 @@ https://thecuriousdev.co.in/
 
 ## Screenshot of the website
 
+
+<img width="1440" alt="Screenshot 2023-06-07 at 04 36 29" src="https://github.com/curiousPirate/react-portfolio/assets/85549330/7df29943-e7f1-4d7c-a75d-7ef8358f2d7e">
