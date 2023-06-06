@@ -10,7 +10,7 @@ const projectsData = [
     futureDevelopment:
       "Let's Go Party has exciting plans for future development to enhance the user experience and make the platform more social and interactive. One key feature in the pipeline is the addition of a Share button, allowing users to effortlessly share their favorite events or recommended restaurants with friends through various social media platforms. This sharing capability will enable users to spread the word about exciting events and dining experiences, fostering a sense of community and engagement. Another planned feature is the introduction of a chat functionality within the application. This chat feature will enable users to connect and communicate with their friends or other event attendees, facilitating coordination and enhancing the overall experience of attending events together. Users will be able to discuss event details, make plans, and share their excitement, fostering a vibrant social environment within Let's Go Party.Furthermore, Let's Go Party aims to expand its database by incorporating more niche or lesser-known events and restaurants. By including a diverse range of options, the platform will cater to different preferences and provide users with unique and undiscovered experiences. This expansion will ensure that Let's Go Party remains a comprehensive and valuable resource for individuals seeking memorable and enjoyable events and dining opportunities.",
     skills: "React, Tailwind, Node.JS, SerpApi, email.JS, Netlify.",
-    image: require("../design/letsgoparty.png"),
+    image: require("../project-design/lets-go-party.jpg"),
     projectLink: "https://letsgoparty.netlify.app/",
     repoLink: "https://github.com/curiousPirate/letsgoparty",
   },
@@ -24,7 +24,7 @@ const projectsData = [
       "In the future, Movie Mate can incorporate streaming details for movies, allowing users to easily find out where they can stream or watch a particular movie. This feature will provide convenience and save users' time by eliminating the need to search for streaming platforms separately. Movie Mate can expand its offerings by including TV shows alongside movies. Users will have access to a wide range of TV shows, enabling them to explore and discover new series. This addition will make Movie Mate a comprehensive platform for both movies and TV show enthusiasts.",
     skills:
       "Vanilla Java Script, Tailwind, TMDB-API, IMDb-API, API-Ninja, Netlify.",
-    image: require("../project-design/movie-mate.png"),
+    image: require("../project-design/movie-mate.webp"),
     projectLink: "https://moviemateforever.netlify.app/",
     repoLink: "https://github.com/curiousPirate/MovieMate",
   },
@@ -34,7 +34,7 @@ const projectsData = [
     description:
       "Introducing JS Quiz Master, an interactive JavaScript quiz application designed to sharpen your skills and test your knowledge of JavaScript concepts. With a dynamic scoring system that rewards quick thinking, you'll feel the adrenaline rush as you race against the clock to answer questions accurately. The application keeps track of your performance, assigning points based on the time left after answering each question. Challenge yourself to beat your previous scores and climb to the top of the leaderboard. Your accomplishments are showcased with pride, as your initials and scores are securely saved and displayed using local storage. JS Quiz Master provides an engaging and immersive learning experience, allowing you to reinforce your JavaScript expertise while enjoying the thrill of competition. Are you ready to put your JavaScript knowledge to the ultimate test? Get started now and see how high you can score!",
     skills: "Vanilla Java Script",
-    image: require("../project-design/mini-projects.png"),
+    image: require("../project-design/js-quiz.webp"),
     projectLink: "https://curiouspirate.github.io/quiz-game/",
     repoLink: "https://github.com/curiousPirate/quiz-game",
   },

@@ -6,6 +6,7 @@ import Smiles from "../design/smile-svg/smilesvg";
 const About = () => {
   return (
     <div className="flex place-content-center bg-[#001129]">
+      <Smiles />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -16,7 +17,6 @@ const About = () => {
         <p className="m-20 text-3xl md:text-4xl lg:text-5xl text-teal-500 text-center">
           A Little About Me
         </p>
-        <Smiles />
         <hr className="p-6"></hr>
         <p className="mb-12 opacity-80 text-lg text-white">
           I'm a chemical engineering graduate with a strong passion for
@@ -52,7 +52,7 @@ const About = () => {
           work!
         </p>
         <hr className="p-6"></hr>
-        <div className="flex justify-center gap-2 mb-20">
+        <div className="flex justify-center gap-6 mb-20">
           <Link
             to="/"
             className="relative inline-block px-2 py-2 font-medium group"
