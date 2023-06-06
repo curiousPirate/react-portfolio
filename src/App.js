@@ -30,7 +30,7 @@ const App = () => {
       <div>
         <Header />
         <Suspense fallback={<LoadingIndicator />}>
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="exit">
             <Routes>
               <Route
                 path="/"
