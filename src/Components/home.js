@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
-import { ReactComponent as Svg } from "../design/bg.svg";
 import TechSVG from "../Components/techsvg"
+import Intros from "../design/intro-svg/introsvg";
 
 const Home = () => {
   useEffect(() => {
@@ -49,7 +49,7 @@ const Home = () => {
             className="object-contain"
             alt="chaitanya"
           />
-          <Svg
+          <Intros
             className="fixed top-0 left-200"
             style={{ zIndex: 0 }}
           />

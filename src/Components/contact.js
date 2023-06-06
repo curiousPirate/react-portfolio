@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Confetti from "react-confetti";
 import SatelliteMotion from "./satellitemotion";
+import { motion } from "framer-motion";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -37,12 +38,19 @@ function Contact() {
 
   return (
     <div className="h-screen bg-[#001129] p-0">
-      <h1 className="p-10 text-xl lg:text-3xl text-justify text-teal-500 px-10 lg:px-32">
-        "Looking for an enthusiastic and skilled professional? I'm available for
-        freelance and full-time job opportunities, ready to take on exciting
-        projects. Fill out the details below, and I'll get in touch with you
-        promptly!"
-      </h1>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-justify"
+      >
+        <h1 className="p-10 text-xl lg:text-3xl text-justify text-teal-500 px-10 lg:px-32">
+          "Looking for an enthusiastic and skilled professional? I'm available
+          for freelance and full-time job opportunities, ready to take on
+          exciting projects. Fill out the details below, and I'll get in touch
+          with you promptly!"
+        </h1>
+      </motion.div>
       <div className="flex justify-center">
         <form onSubmit={handleSubmit}>
           <div className="inputBox pb-10 ">

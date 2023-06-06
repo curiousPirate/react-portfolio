@@ -1,4 +1,5 @@
-import { ReactComponent as Intro } from "../design/intro.svg";
+import { ReactComponent as Intro } from "./bg.svg";
+import './animation.css';
 
 
 export default function Intros () {
