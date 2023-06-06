@@ -31,7 +31,7 @@ const Home = () => {
           </h2>
 
           <Link
-            to="/projects"
+            to="/about"
             className="relative inline-block px-2 py-2 mt-32 font-medium group"
             style={{ zIndex: "20" }}
           >
@@ -50,7 +50,7 @@ const Home = () => {
             alt="chaitanya"
           />
           <Svg
-            className="fixed top-0 left-200 animate-pulse"
+            className="fixed top-0 left-200"
             style={{ zIndex: 0 }}
           />
         </div>

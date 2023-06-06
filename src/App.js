@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Header from "./Components/header.js";
 import Home from "./Components/home.js";
+import About from "./Components/about.js";
 import Projects from "./Components/projects.js";
 import Contact from "./Components/contact.js";
 import Footer from "./Components/footer.js";
@@ -40,6 +41,18 @@ const App = () => {
                     exit={{ opacity: 0 }}
                   >
                     <Home />
+                  </motion.div>
+                }
+              />
+              <Route
+                path="/about"
+                element={
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    <About />
                   </motion.div>
                 }
               />

@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <div className="w-full z-50 flex items-center justify-between bg-[#020617] py-2 pr-20 pl-10 sm:pr-28 top-0">
       <Link to="/" id="home">
-        <Logo className="buttons w-18.08 h-20" />
+        <Logo className="w-18.08 h-20 cursor-pointer" />
       </Link>
       <nav>
         <section className="flex">
@@ -64,6 +64,15 @@ export default function Header() {
                   onClick={closeMenu}
                 >
                   &lt; Home &gt;
+                </Link>
+              </li>
+              <li className="my-8 text-4xl cursor-pointer">
+                <Link
+                  to="/about"
+                  className="px-4 py-2 text-white hover:text-teal-500"
+                  onClick={closeMenu}
+                >
+                  &lt; About &gt;
                 </Link>
               </li>
               <li className="my-8 text-4xl cursor-pointer">
