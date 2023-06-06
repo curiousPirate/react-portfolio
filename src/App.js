@@ -1,13 +1,12 @@
-import React, { lazy, useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import Header from "./Components/header.js";
+import Home from "./Components/home.js";
+import Projects from "./Components/projects.js";
+import Contact from "./Components/contact.js";
 import Footer from "./Components/footer.js";
 import RingLoader from "react-spinners/RingLoader";
-
-const Home = lazy(() => import("./Components/home.js"));
-const Projects = lazy(() => import("./Components/projects.js"));
-const About = lazy(() => import("./Components/about.js"));
-const Contact = lazy(() => import("./Components/contact.js"));
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -30,12 +29,46 @@ const App = () => {
       <div>
         <Header />
         <Suspense fallback={<LoadingIndicator />}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    <Home />
+                  </motion.div>
+                }
+              />
+              <Route
+                path="/projects"
+                element={
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    <Projects />
+                  </motion.div>
+                }
+              />
+              <Route
+                path="/contact"
+                element={
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    <Contact />
+                  </motion.div>
+                }
+              />
+            </Routes>
+          </AnimatePresence>
         </Suspense>
         <Footer />
       </div>

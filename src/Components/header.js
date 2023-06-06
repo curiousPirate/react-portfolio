@@ -77,15 +77,6 @@ export default function Header() {
               </li>
               <li className="my-8 text-4xl cursor-pointer">
                 <Link
-                  to="/about"
-                  className="px-4 py-2 text-white hover:text-teal-500"
-                  onClick={closeMenu}
-                >
-                  &lt; About &gt;
-                </Link>
-              </li>
-              <li className="my-8 text-4xl cursor-pointer">
-                <Link
                   to="/contact"
                   className="px-4 py-2 text-white hover:text-teal-500"
                   onClick={closeMenu}

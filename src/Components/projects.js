@@ -64,11 +64,11 @@ export default function About() {
               rel="noopener noreferrer"
               className="flex justify-center py-4 md:py-8 font-bold"
             >
-              <h2 className="text-3xl md:text-3xl text-[#8d286f] first-letter:text-6xl">
+              <span className="text-3xl md:text-3xl text-[#8d286f] first-letter:text-6xl hover:underline">
                 {project.title}
-              </h2>
+              </span>
             </a>
-            <div className="text-base md:text-lg text-teal-500 text-justify">
+            <div className="text-xl text-teal-500 text-justify">
               <span className="block mt-4 mx-4 text-3xl font-bold first-letter:text-[#8d286f] underline">
                 Introduction:
               </span>

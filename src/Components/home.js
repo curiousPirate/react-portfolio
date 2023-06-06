@@ -20,7 +20,7 @@ const Home = () => {
   }, []);
 
     return (
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row h-full">
         <div className="md:w-1/2 flex flex-col p-8 bg-[#001129] text-teal-500">
           <h1 className="text-4xl font-bold mt-10 lg:mt-40 text-[#8d286f]">
             Hello! I'm Chaitanya,
