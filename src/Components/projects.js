@@ -31,26 +31,18 @@ const projectsData = [
   {
     id: 3,
     title: "JS Quiz",
-    description: "This is project 2.",
-    skills: "Python, Django, HTML, CSS",
+    description:
+      "Introducing JS Quiz Master, an interactive JavaScript quiz application designed to sharpen your skills and test your knowledge of JavaScript concepts. With a dynamic scoring system that rewards quick thinking, you'll feel the adrenaline rush as you race against the clock to answer questions accurately. The application keeps track of your performance, assigning points based on the time left after answering each question. Challenge yourself to beat your previous scores and climb to the top of the leaderboard. Your accomplishments are showcased with pride, as your initials and scores are securely saved and displayed using local storage. JS Quiz Master provides an engaging and immersive learning experience, allowing you to reinforce your JavaScript expertise while enjoying the thrill of competition. Are you ready to put your JavaScript knowledge to the ultimate test? Get started now and see how high you can score!",
+    skills: "Vanilla Java Script",
     image: require("../project-design/mini-projects.png"),
-    projectLink: "https://project2.com",
-    repoLink: "https://github.com/project2",
-  },
-  {
-    id: 4,
-    title: "Mini Projects",
-    description: "This is project 2.",
-    skills: "Python, Django, HTML, CSS",
-    image: require("../project-design/mini-projects.png"),
-    projectLink: "https://project2.com",
-    repoLink: "https://github.com/project2",
+    projectLink: "https://curiouspirate.github.io/quiz-game/",
+    repoLink: "https://github.com/curiousPirate/quiz-game",
   },
 ];
 
 export default function About() {
   return (
-    <Carousel className="bg-[#001129] h-full">
+    <Carousel className="bg-[#001129]">
       {projectsData.map((project) => (
         <div className="px-4 project-card h-max" key={project.id}>
           <h1 className="text-center text-4xl text-teal-500 py-5">
@@ -83,12 +75,16 @@ export default function About() {
               <span className="block m-4 first-letter:text-4xl first-letter:font-bold first-letter:mr-2 first-letter:float-left first-letter:text-[#8d286f]">
                 {project.description}
               </span>
-              <span className="block mt-4 mx-4 text-3xl font-bold first-letter:text-[#8d286f] underline">
-                Future Development:
-              </span>
-              <span className="block m-4 first-letter:text-4xl first-letter:font-bold first-letter:mr-2 first-letter:float-left first-letter:text-[#8d286f]">
-                {project.futureDevelopment}
-              </span>
+              {project.futureDevelopment && (
+                <span className="block mt-4 mx-4 text-3xl font-bold first-letter:text-[#8d286f] underline">
+                  Future Development:
+                </span>
+              )}
+              {project.futureDevelopment && (
+                <span className="block m-4 first-letter:text-4xl first-letter:font-bold first-letter:mr-2 first-letter:float-left first-letter:text-[#8d286f]">
+                  {project.futureDevelopment}
+                </span>
+              )}
               <span className="block mt-4 mx-4 text-3xl font-bold first-letter:text-[#8d286f] underline text-left">
                 Technologies &amp; API's:
               </span>

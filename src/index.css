@@ -159,7 +159,7 @@ button.text-white {
 }
 
 .project-card {
-  height: 728px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
 }
