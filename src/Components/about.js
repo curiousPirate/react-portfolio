@@ -53,8 +53,10 @@ const About = () => {
         </p>
         <hr className="p-6"></hr>
         <div className="flex justify-center gap-6 mb-20">
-          <Link
-            to="/"
+          <a
+            href={require("../design/Resume.pdf")}
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative inline-block px-2 py-2 font-medium group"
             style={{ zIndex: "20" }}
           >
@@ -63,7 +65,7 @@ const About = () => {
             <span className="flex relative justify-center text-white group-hover:text-white">
               &lt;RESUME /&gt;
             </span>
-          </Link>
+          </a>
           <Link
             to="/projects"
             className="relative inline-block px-2 py-2 font-medium group"
