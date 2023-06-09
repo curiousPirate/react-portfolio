@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
 import Header from "./Components/header.js";
 import Home from "./Components/home.js";
 import About from "./Components/about.js";
@@ -30,58 +29,32 @@ const App = () => {
       <div>
         <Header />
         <Suspense fallback={<LoadingIndicator />}>
-          <AnimatePresence mode="exit">
             <Routes>
               <Route
                 path="/"
                 element={
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                  >
                     <Home />
-                  </motion.div>
                 }
               />
               <Route
                 path="/about"
                 element={
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                  >
                     <About />
-                  </motion.div>
                 }
               />
               <Route
                 path="/projects"
                 element={
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                  >
                     <Projects />
-                  </motion.div>
                 }
               />
               <Route
                 path="/contact"
                 element={
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                  >
                     <Contact />
-                  </motion.div>
                 }
               />
             </Routes>
-          </AnimatePresence>
         </Suspense>
         <Footer />
       </div>

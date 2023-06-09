@@ -1,6 +1,6 @@
 export default function TechSVG () {
   return (
-    <div className="flex w-full items-start overflow-scroll md:w-10/12 py-4">
+    <div className="flex items-stretch py-4 min-w-2xl">
         <svg viewBox="0 0 260 260" fill="none" className="hover:scale-110">
           <path
             d="M93.9281 166.034L85.9067 76H174.093L166.072 165.985L129.927 176"
