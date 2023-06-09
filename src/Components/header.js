@@ -2,10 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../design/logo.svg";
 
-
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const genericHamburgerLine = `h-1 w-12 my-1 rounded-full bg-teal-500 border-0 border-solid transition ease transform duration-200`;
+  const genericHamburgerLine = `h-1 w-12 my-1 rounded-full bg-teal-600 border-0 border-solid transition ease transform duration-200`;
   const closeMenu = () => {
     setIsNavOpen(false);
     document.getElementById("menu").classList.add("hideMenuNav");
@@ -55,12 +54,12 @@ export default function Header() {
               isNavOpen ? "showMenuNav" : "hideMenuNav"
             }`}
           >
-            <div className="border-4 border-transparent border-l-teal-500 p-6">
+            <div className="border-4 border-transparent border-l-teal-600 p-6">
               <li className="text-4xl cursor-pointer">
                 <Link
                   to="/"
                   id="home"
-                  className="px-4 py-2 text-white hover:text-teal-500 animate-[fade-in_1s_ease-in-out]"
+                  className="px-4 py-2 text-white hover:text-teal-600 animate-[fade-in_1s_ease-in-out]"
                   onClick={closeMenu}
                 >
                   &lt; Home &gt;
@@ -69,7 +68,7 @@ export default function Header() {
               <li className="my-8 text-4xl cursor-pointer">
                 <Link
                   to="/about"
-                  className="px-4 py-2 text-white hover:text-teal-500"
+                  className="px-4 py-2 text-white hover:text-teal-600"
                   onClick={closeMenu}
                 >
                   &lt; About &gt;
@@ -78,7 +77,7 @@ export default function Header() {
               <li className="my-8 text-4xl cursor-pointer">
                 <Link
                   to="/projects"
-                  className="px-4 py-2 text-white hover:text-teal-500"
+                  className="px-4 py-2 text-white hover:text-teal-600"
                   onClick={closeMenu}
                 >
                   &lt; Projects &gt;
@@ -87,7 +86,7 @@ export default function Header() {
               <li className="my-8 text-4xl cursor-pointer">
                 <Link
                   to="/contact"
-                  className="px-4 py-2 text-white hover:text-teal-500"
+                  className="px-4 py-2 text-white hover:text-teal-600"
                   onClick={closeMenu}
                 >
                   &lt; Get In Touch! &gt;

@@ -14,7 +14,7 @@ const About = () => {
         className="text-justify"
         style={{ width: "75%", maxWidth: "50rem" }}
       >
-        <p className="m-20 text-3xl md:text-4xl lg:text-5xl text-teal-500 text-center">
+        <p className="m-20 text-3xl md:text-4xl lg:text-5xl text-teal-600 text-center">
           A Little About Me
         </p>
         <hr className="p-6"></hr>
@@ -61,7 +61,7 @@ const About = () => {
             style={{ zIndex: "20" }}
           >
             <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span className="absolute inset-0 w-full h-full bg-teal-500 border-2 border-black group-hover:bg-black"></span>
+            <span className="absolute inset-0 w-full h-full bg-teal-600 border-2 border-black group-hover:bg-black"></span>
             <span className="flex relative justify-center text-white group-hover:text-white">
               &lt;RESUME /&gt;
             </span>
@@ -72,7 +72,7 @@ const About = () => {
             style={{ zIndex: "20" }}
           >
             <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span className="absolute inset-0 w-full h-full bg-teal-500 border-2 border-black group-hover:bg-black"></span>
+            <span className="absolute inset-0 w-full h-full bg-teal-600 border-2 border-black group-hover:bg-black"></span>
             <span className="flex relative justify-center text-white group-hover:text-white">
               &lt;PROJECTS /&gt;
             </span>

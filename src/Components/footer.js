@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="fixed bottom-0 bg-[#8d286f] opacity-80 py-3 w-full"
+      className="fixed bottom-0 bg-[#8d286f] bg-opacity-60 backdrop-blur-sm py-3 w-full"
       style={{ zIndex: "200" }}
     >
       <div className="flex space-x-4 justify-around items-center">
@@ -21,7 +21,7 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faHouse}
             size="2xl"
-            style={{ color: location.pathname === "/" ? "#37d7bd" : "" }}
+            style={{ color: location.pathname === "/" ? "#319795" : "#ffffff" }}
           />
         </Link>
         <Link
@@ -31,7 +31,9 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faUserTie}
             size="2xl"
-            style={{ color: location.pathname === "/about" ? "#37d7bd" : "" }}
+            style={{
+              color: location.pathname === "/about" ? "#319795" : "#ffffff",
+            }}
           />
         </Link>
         <Link
@@ -42,7 +44,7 @@ const Footer = () => {
             icon={faLaptopCode}
             size="2xl"
             style={{
-              color: location.pathname === "/projects" ? "#37d7bd" : "",
+              color: location.pathname === "/projects" ? "#319795" : "#ffffff",
             }}
           />
         </Link>
@@ -53,7 +55,9 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faEnvelope}
             size="2xl"
-            style={{ color: location.pathname === "/contact" ? "#37d7bd" : "" }}
+            style={{
+              color: location.pathname === "/contact" ? "#319795" : "#ffffff",
+            }}
           />
         </Link>
       </div>

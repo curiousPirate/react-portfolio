@@ -44,7 +44,7 @@ function Contact() {
         transition={{ duration: 0.8 }}
         className="text-justify"
       >
-        <h1 className="p-10 text-xl lg:text-3xl text-justify text-teal-500 px-10 lg:px-32">
+        <h1 className="p-10 text-xl lg:text-3xl text-justify text-teal-600 px-10 lg:px-32">
           "Looking for an enthusiastic and skilled professional? I'm available
           for freelance and full-time job opportunities, ready to take on
           exciting projects. Fill out the details below, and I'll get in touch
@@ -93,7 +93,7 @@ function Contact() {
               className="relative inline-block px-4 py-2 font-medium group w-full"
             >
               <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-              <span className="absolute inset-0 w-full h-full bg-teal-500 border-2 border-black group-hover:bg-black"></span>
+              <span className="absolute inset-0 w-full h-full bg-teal-600 border-2 border-black group-hover:bg-black"></span>
               <span className="flex relative justify-center text-white  group-hover:text-white">
                 Get in Touch!
               </span>

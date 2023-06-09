@@ -45,7 +45,7 @@ export default function Project() {
     <Carousel className="bg-[#001129]">
       {projectsData.map((project) => (
         <div className="px-4 h-max" key={project.id}>
-          <h1 className="text-center text-4xl text-teal-500 py-5">
+          <h1 className="text-center text-4xl text-teal-600 py-5">
             &lt; PROJECTS &gt;
           </h1>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -92,10 +92,10 @@ export default function Project() {
                   )}
                   {project.futureDevelopment && (
                     <>
-                    <span className="block mb-12 first-letter:text-4xl first-letter:font-bold first-letter:mr-2 first-letter:float-left first-letter:text-[#8d286f]">
-                      {project.futureDevelopment}
-                    </span>
-                    <hr className="p-6"></hr>
+                      <span className="block mb-12 first-letter:text-4xl first-letter:font-bold first-letter:mr-2 first-letter:float-left first-letter:text-[#8d286f]">
+                        {project.futureDevelopment}
+                      </span>
+                      <hr className="p-6"></hr>
                     </>
                   )}
                   <span className="block mt-4 mb-12 text-3xl font-bold first-letter:text-[#8d286f] underline text-left">
@@ -168,7 +168,7 @@ export default function Project() {
                     href={project.repoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-teal-500 text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
+                    className="bg-teal-600 text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
                   >
                     View Code
                     <svg
