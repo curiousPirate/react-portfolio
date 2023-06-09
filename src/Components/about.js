@@ -18,7 +18,7 @@ const About = () => {
           A Little About Me
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 opacity-80 text-lg text-white">
+        <p className="mb-12 text-lg text-white">
           I'm a chemical engineering graduate with a strong passion for
           relationship building and management. With a 5+ years of experience in
           project management and customer success, I discovered my innate
@@ -27,7 +27,7 @@ const About = () => {
           design and creating visually pleasing websites.
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 opacity-80 text-lg text-white">
+        <p className="mb-12 text-lg text-white">
           Curiosity has been the driving force behind my career transition. I am
           constantly seeking knowledge and exploring new technologies,
           frameworks, and coding practices. The ever-evolving nature of the tech
@@ -37,7 +37,7 @@ const About = () => {
           approach.
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 opacity-80 text-lg text-white">
+        <p className="mb-12 text-lg text-white">
           Combining my background in relationship building, project management,
           and my newfound passion for coding, I strive to create meaningful and
           user-centric web experiences. My goal is to blend aesthetics with
@@ -46,7 +46,7 @@ const About = () => {
           experience.
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 opacity-80 text-lg text-white">
+        <p className="mb-12 text-lg text-white">
           Have a look at the projects that I have worked with and you can find
           my resume a click away if you feel more curious about my previous
           work!

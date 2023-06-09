@@ -161,6 +161,4 @@ button.text-white {
 
 .project-card {
   height: 1000px;
-  display: flex;
-  flex-direction: column;
 }
