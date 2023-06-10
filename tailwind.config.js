@@ -5,7 +5,13 @@ module.exports = withMT({
   safelist: ['animate-[fade-in_1s_ease-in-out]', 'animate-[fade-in-down_1s_ease-in-out]'],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backdropFilter: {
+        'none': 'none',
+        'blur-sm': 'blur(4px)',
+        'blur-md': 'blur(8px)', 
+      },
+    },
   },
   plugins: [],
 });
