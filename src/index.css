@@ -129,20 +129,20 @@ body {
   z-index: 0;
   margin: 0;
   padding: 0;
-  -webkit-transition: top 6s;
-  -moz-transition: top 6s;
-  -ms-transition: top 6s;
-  -o-transition: top 6s;
-  transition: top 6s;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -ms-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s;
 }
 
 .screen:hover img {
-  top: -100%;
-  -webkit-transition: all 6s;
-  -moz-transition: all 6s;
-  -ms-transition: all 6s;
-  -o-transition: all 6s;
-  transition: all 6s;
+  top: -10%;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 /* Carousel btns */
