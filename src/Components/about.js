@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Smiles from "../design/smile-svg/smilesvg";
+// import Smiles from "../design/smile-svg/smilesvg";
+import Aboutsvg from "../design/about-svg/aboutsvg";
 
 const About = () => {
   return (
     <div className="flex place-content-center bg-[#001129]">
-      <Smiles />
+      {/* <Smiles /> */}
+      <Aboutsvg />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

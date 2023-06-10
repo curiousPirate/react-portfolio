@@ -1,0 +1,835 @@
+svg .about-1 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+
+svg.active .about-1 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-2 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s;
+}
+
+svg.active .about-2 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-3 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s;
+}
+
+svg.active .about-3 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-4 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s;
+}
+
+svg.active .about-4 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-5 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s;
+}
+
+svg.active .about-5 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-6 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s;
+}
+
+svg.active .about-6 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-7 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s;
+}
+
+svg.active .about-7 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-8 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s;
+}
+
+svg.active .about-8 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-9 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s;
+}
+
+svg.active .about-9 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-10 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s;
+}
+
+svg.active .about-10 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-11 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s;
+}
+
+svg.active .about-11 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-12 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s;
+}
+
+svg.active .about-12 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-13 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s;
+}
+
+svg.active .about-13 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-14 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s;
+}
+
+svg.active .about-14 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-15 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s;
+}
+
+svg.active .about-15 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-16 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s;
+}
+
+svg.active .about-16 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-17 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s;
+}
+
+svg.active .about-17 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-18 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.04s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.04s;
+}
+
+svg.active .about-18 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-19 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.16s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.16s;
+}
+
+svg.active .about-19 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-20 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.28s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.28s;
+}
+
+svg.active .about-20 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-21 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4s;
+}
+
+svg.active .about-21 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-22 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.52s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.52s;
+}
+
+svg.active .about-22 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-23 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6399999999999997s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6399999999999997s;
+}
+
+svg.active .about-23 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-24 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.76s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.76s;
+}
+
+svg.active .about-24 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-25 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.88s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.88s;
+}
+
+svg.active .about-25 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-26 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3s;
+}
+
+svg.active .about-26 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-27 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.12s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.12s;
+}
+
+svg.active .about-27 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-28 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2399999999999998s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2399999999999998s;
+}
+
+svg.active .about-28 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-29 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.36s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.36s;
+}
+
+svg.active .about-29 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-30 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.48s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.48s;
+}
+
+svg.active .about-30 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-31 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5999999999999996s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5999999999999996s;
+}
+
+svg.active .about-31 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-32 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7199999999999998s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7199999999999998s;
+}
+
+svg.active .about-32 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-33 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.84s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.84s;
+}
+
+svg.active .about-33 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-34 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.96s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.96s;
+}
+
+svg.active .about-34 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-35 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.08s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.08s;
+}
+
+svg.active .about-35 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-36 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s;
+}
+
+svg.active .about-36 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-37 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.32s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.32s;
+}
+
+svg.active .about-37 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-38 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.4399999999999995s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.4399999999999995s;
+}
+
+svg.active .about-38 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-39 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.56s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.56s;
+}
+
+svg.active .about-39 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-40 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.68s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.68s;
+}
+
+svg.active .about-40 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-41 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.8s;
+}
+
+svg.active .about-41 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-42 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.92s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.92s;
+}
+
+svg.active .about-42 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-43 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.04s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.04s;
+}
+
+svg.active .about-43 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-44 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.16s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.16s;
+}
+
+svg.active .about-44 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-45 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.279999999999999s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.279999999999999s;
+}
+
+svg.active .about-45 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-46 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.3999999999999995s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.3999999999999995s;
+}
+
+svg.active .about-46 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-47 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.52s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.52s;
+}
+
+svg.active .about-47 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-48 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.64s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.64s;
+}
+
+svg.active .about-48 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-49 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.76s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.76s;
+}
+
+svg.active .about-49 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-50 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.88s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.88s;
+}
+
+svg.active .about-50 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-51 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6s;
+}
+
+svg.active .about-51 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-52 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.12s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.12s;
+}
+
+svg.active .about-52 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-53 {
+  stroke-dashoffset: 965.3973388671875px;
+  stroke-dasharray: 965.3973388671875px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.24s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.24s;
+}
+
+svg.active .about-53 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-54 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.359999999999999s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.359999999999999s;
+}
+
+svg.active .about-54 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-55 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.4799999999999995s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.4799999999999995s;
+}
+
+svg.active .about-55 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-56 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.6s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.6s;
+}
+
+svg.active .about-56 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-57 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.72s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.72s;
+}
+
+svg.active .about-57 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-58 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.84s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.84s;
+}
+
+svg.active .about-58 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-59 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.96s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.96s;
+}
+
+svg.active .about-59 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-60 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.08s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.08s;
+}
+
+svg.active .about-60 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-61 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.199999999999999s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.199999999999999s;
+}
+
+svg.active .about-61 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-62 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.319999999999999s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.319999999999999s;
+}
+
+svg.active .about-62 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-63 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.4399999999999995s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.4399999999999995s;
+}
+
+svg.active .about-63 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-64 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.56s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.56s;
+}
+
+svg.active .about-64 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-65 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.68s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.68s;
+}
+
+svg.active .about-65 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-66 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.8s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.8s;
+}
+
+svg.active .about-66 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-67 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.92s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.92s;
+}
+
+svg.active .about-67 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-68 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.04s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.04s;
+}
+
+svg.active .about-68 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-69 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.16s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.16s;
+}
+
+svg.active .about-69 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-70 {
+  stroke-dashoffset: 242.84933471679688px;
+  stroke-dasharray: 242.84933471679688px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.28s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.28s;
+}
+
+svg.active .about-70 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-71 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.4s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.4s;
+}
+
+svg.active .about-71 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-72 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.52s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.52s;
+}
+
+svg.active .about-72 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-73 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.64s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.64s;
+}
+
+svg.active .about-73 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-74 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.76s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.76s;
+}
+
+svg.active .about-74 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-75 {
+  stroke-dashoffset: 483.69866943359375px;
+  stroke-dasharray: 483.69866943359375px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.879999999999999s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.879999999999999s;
+}
+
+svg.active .about-75 {
+  stroke-dashoffset: 0;
+}
+
+svg .about-76 {
+  stroke-dashoffset: 965.3973388671875px;
+  stroke-dasharray: 965.3973388671875px;
+  -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 9s;
+          transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 9s;
+}
+
+svg.active .about-76 {
+  stroke-dashoffset: 0;
+}
