@@ -9,52 +9,39 @@ import Footer from "./Components/footer.js";
 import RingLoader from "react-spinners/RingLoader";
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   const LoadingIndicator = () => (
     <div className="loading">
-      <RingLoader color={"#102a43"} loading={loading} size={60} />
+      <RingLoader color={"#ffffff"} loading={loading} size={60} />
     </div>
   );
+
+  if (loading) {
+    return <LoadingIndicator />;
+  }
 
   return (
     <HashRouter>
       <div>
         <Header />
         <Suspense fallback={<LoadingIndicator />}>
-            <Routes>
-              <Route
-                path="/"
-                element={
-                    <Home />
-                }
-              />
-              <Route
-                path="/about"
-                element={
-                    <About />
-                }
-              />
-              <Route
-                path="/projects"
-                element={
-                    <Projects />
-                }
-              />
-              <Route
-                path="/contact"
-                element={
-                    <Contact />
-                }
-              />
-            </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </Suspense>
         <Footer />
       </div>
@@ -63,3 +50,4 @@ const App = () => {
 };
 
 export default App;
+
