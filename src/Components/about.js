@@ -1,26 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-// import Smiles from "../design/smile-svg/smilesvg";
 import Aboutsvg from "../design/about-svg/aboutsvg";
 
 const About = () => {
   return (
     <div className="flex place-content-center bg-[#001129]">
-      {/* <Smiles /> */}
       <Aboutsvg />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="text-justify"
-        style={{ width: "75%", maxWidth: "50rem" }}
+        style={{ width: "85%", maxWidth: "100%" }}
       >
-        <p className="m-20 text-3xl md:text-4xl lg:text-5xl text-teal-600 text-center">
+        <p className="flex justify-center items-center my-10 p-10 text-3xl md:text-4xl lg:text-5xl text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           A Little About Me
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 text-lg text-white">
+        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           I'm a chemical engineering graduate with a strong passion for
           relationship building and management. With a 5+ years of experience in
           project management and customer success, I discovered my innate
@@ -29,7 +27,7 @@ const About = () => {
           design and creating visually pleasing websites.
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 text-lg text-white">
+        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           Curiosity has been the driving force behind my career transition. I am
           constantly seeking knowledge and exploring new technologies,
           frameworks, and coding practices. The ever-evolving nature of the tech
@@ -39,7 +37,7 @@ const About = () => {
           approach.
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 text-lg text-white">
+        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           Combining my background in relationship building, project management,
           and my newfound passion for coding, I strive to create meaningful and
           user-centric web experiences. My goal is to blend aesthetics with
@@ -48,7 +46,7 @@ const About = () => {
           experience.
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 text-lg text-white">
+        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           Have a look at the projects that I have worked with and you can find
           my resume a click away if you feel more curious about my previous
           work!
