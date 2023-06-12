@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* html styles */
+html {
+  scroll-behavior: smooth;
+}
 
 /* body styles */
 body {
@@ -151,14 +155,9 @@ body {
 }
 
 .bottom-4 {
-  bottom: 5rem;
   display: none;
 }
 
 button.text-white {
   color: rgb(127 255 212);
-}
-
-.project-card {
-  height: 1000px;
 }
