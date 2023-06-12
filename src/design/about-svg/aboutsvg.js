@@ -6,8 +6,8 @@ import "./about-animation.css";
 export default function AboutSvg() {
   return (
     <>
-      <AboutSVG className="fixed top-0 -left-10" style={{ zIndex: 0 }} />
-      <Circle className="fixed top-0 -right-10 lg:right-0" style={{ zIndex: 0 }} />
+      <AboutSVG className="fixed top-20 -left-10 -z-0" />
+      <Circle className="fixed top-20 lg:right-0 -z-0 -lg:z-10 hidden lg:block" />
     </>
   );
 }

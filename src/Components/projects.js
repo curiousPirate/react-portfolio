@@ -45,10 +45,16 @@ export default function Project() {
     <Carousel className="bg-[#001129]">
       {projectsData.map((project) => (
         <div className="px-4 h-max" key={project.id}>
-          <h1 className="text-center text-4xl text-teal-600 py-5">
+          <h1 className="text-center text-4xl text-teal-600 py-5" id="project">
             &lt; PROJECTS &gt;
           </h1>
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <div className="screen">
               <img
                 src={project.image}
@@ -67,7 +73,7 @@ export default function Project() {
               className="text-justify"
               style={{ width: "75%", maxWidth: "50rem" }}
             >
-              <div className="project-card">
+              <div className="h-fit">
                 <a
                   href={project.projectLink}
                   target="_blank"

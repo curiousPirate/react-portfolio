@@ -11,13 +11,21 @@ import {
 const Footer = () => {
   const location = useLocation();
 
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <footer
       className="fixed bottom-0 bg-[#8d286f] bg-opacity-60 backdrop-blur-sm py-3 w-full"
       style={{ zIndex: "200" }}
     >
       <div className="flex space-x-4 justify-around items-center">
-        <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+        <Link
+          to="/"
+          className={location.pathname === "/" ? "active" : ""}
+          onClick={handleClick}
+        >
           <FontAwesomeIcon
             icon={faHouse}
             size="2xl"
@@ -27,6 +35,7 @@ const Footer = () => {
         <Link
           to="/about"
           className={location.pathname === "/about" ? "active" : ""}
+          onClick={handleClick}
         >
           <FontAwesomeIcon
             icon={faUserTie}
@@ -39,6 +48,7 @@ const Footer = () => {
         <Link
           to="/projects"
           className={location.pathname === "/projects" ? "active" : ""}
+          onClick={handleClick}
         >
           <FontAwesomeIcon
             icon={faLaptopCode}
@@ -51,6 +61,7 @@ const Footer = () => {
         <Link
           to="/contact"
           className={location.pathname === "/contact" ? "active" : ""}
+          onClick={handleClick}
         >
           <FontAwesomeIcon
             icon={faEnvelope}
