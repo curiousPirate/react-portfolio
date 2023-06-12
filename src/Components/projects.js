@@ -54,6 +54,8 @@ export default function Project() {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-96 object-cover"
+                loading="lazy"
+                media="(min-width: 600px)"
               />
             </div>
           </motion.div>

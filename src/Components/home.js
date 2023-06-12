@@ -21,18 +21,18 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="min-h-screen fixed">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="flex flex-col md:flex-row h-full">
-          <div className="md:w-1/2 flex flex-col p-8 bg-[#001129] text-teal-600">
-            <h1 className="text-4xl font-bold mt-10 lg:mt-40 text-[#8d286f]">
+        <div className="flex flex-col md:flex-row">
+          <div className="md:w-1/2 flex flex-col p-8 mt-10 lg:mt-20 bg-[#001129] text-teal-600">
+            <h1 className="text-4xl font-bold place-content-center text-[#8d286f]">
               Hello! I'm Chaitanya,
             </h1>
-            <h2 className="text-xl py-4 h-8 font-extrabold">
+            <h2 className="text-xl py-4 h-8 font-extrabold z-20">
               Expertise in: <br />
               <span className="auto-type"></span>
             </h2>
@@ -61,7 +61,7 @@ const Home = () => {
         </div>
       </motion.div>
       <Intros />
-    </>
+    </div>
   );
 };
 
