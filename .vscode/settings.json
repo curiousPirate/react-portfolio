@@ -2,8 +2,11 @@
   "liveServer.settings.port": 5501,
   "svg.preview.background": "transparent",
   "cSpell.words": [
+    "bootcamp",
     "btns",
-    "imgs"
+    "imgs",
+    "Magento",
+    "Xavvy"
   ],
   "files.associations": {
   "*.css": "tailwindcss"

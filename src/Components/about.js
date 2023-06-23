@@ -20,36 +20,42 @@ const About = () => {
         className="text-justify"
         style={{ width: "85%", maxWidth: "100%" }}
       >
-        <p className="flex justify-center items-center my-10 p-10 text-3xl md:text-4xl lg:text-5xl text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
-          A Little About Me
+        <p className="flex justify-center items-center my-10 p-10 text-3xl md:text-4xl lg:text-5xl text-white underline bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
+          The Journey
         </p>
         <hr className="p-6"></hr>
         <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
-          I'm a chemical engineering graduate with a strong passion for
-          relationship building and management. With a 5+ years of experience in
-          project management and customer success, I discovered my innate
-          ability to connect with people and drive successful outcomes. However,
-          my journey took an exciting turn when I discovered my passion for
-          design and creating visually pleasing websites.
+          First impressions matter, even in the digital world. A website is like
+          a book cover that reflects the essence of a product or company. With a
+          deep understanding of this importance, I embarked on a journey as a
+          frontend developer and designer.
         </p>
         <hr className="p-6"></hr>
         <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
-          Curiosity has been the driving force behind my career transition. I am
-          constantly seeking knowledge and exploring new technologies,
-          frameworks, and coding practices. The ever-evolving nature of the tech
-          industry excites me, as it provides endless opportunities for growth
-          and learning. With each project, I embrace challenges and push myself
-          to think creatively, allowing curiosity to fuel my problem-solving
-          approach.
+          With over 5 years of experience, I bring a unique perspective as a
+          chemical engineering graduate. During my studies, I discovered my
+          innate skills as a people person through organizing various events.
         </p>
         <hr className="p-6"></hr>
         <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
-          Combining my background in relationship building, project management,
-          and my newfound passion for coding, I strive to create meaningful and
-          user-centric web experiences. My goal is to blend aesthetics with
-          functionality, ensuring that every website I create not only looks
-          visually appealing but also delivers a seamless and intuitive user
-          experience.
+          My professional career started as a project engineer in the oil and
+          gas industry at My Eco Energy, where I quickly transitioned into
+          customer success and project management roles. Working on
+          groundbreaking projects like the smart city and safe city initiatives
+          in Bengaluru at Matrix Security & Surveillance, I handled complex
+          networks with over 10,000 cameras and managed the dial 100 emergency
+          response system. Later I joined Xavvy in the UK, where I worked as a
+          customer success and Magento developer. During my tenure, I played a
+          crucial role in building an e-commerce project for Total Tiles.
+        </p>
+        <hr className="p-6"></hr>
+        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
+          Seeking further professional growth, I completed a bootcamp on React
+          frontend development offered by edX UK. Through this program, I gained
+          hands-on experience in developing projects such as finding events
+          around you and a movie database platform. Additionally, I had the
+          opportunity to work on a food delivery application, honing my skills
+          in creating intuitive and seamless user experiences."
         </p>
         <hr className="p-6"></hr>
         <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
@@ -72,16 +78,16 @@ const About = () => {
             </span>
           </a>
           <Link
-          to="/projects"
-          className="relative inline-block px-2 py-2 font-medium group"
-          onClick={handleClick}
-        >
-          <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-          <span className="absolute inset-0 w-full h-full bg-teal-600 border-2 border-black group-hover:bg-black"></span>
-          <span className="flex relative justify-center text-white group-hover:text-white">
-            &lt;PROJECTS /&gt;
-          </span>
-        </Link>
+            to="/projects"
+            className="relative inline-block px-2 py-2 font-medium group"
+            onClick={handleClick}
+          >
+            <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+            <span className="absolute inset-0 w-full h-full bg-teal-600 border-2 border-black group-hover:bg-black"></span>
+            <span className="flex relative justify-center text-white group-hover:text-white">
+              &lt;PROJECTS /&gt;
+            </span>
+          </Link>
         </div>
       </motion.div>
     </div>
