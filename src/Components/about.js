@@ -23,21 +23,24 @@ const About = () => {
         <p className="flex justify-center items-center my-10 p-10 text-3xl md:text-4xl lg:text-5xl text-white underline bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           The Journey
         </p>
+        {/* <div class="balloon"></div>
+        <div class="basket"></div>
+        <div class="cloud"></div> */}
         <hr className="p-6"></hr>
-        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
+        <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           First impressions matter, even in the digital world. A website is like
           a book cover that reflects the essence of a product or company. With a
           deep understanding of this importance, I embarked on a journey as a
           frontend developer and designer.
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
+        <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           With over 5 years of experience, I bring a unique perspective as a
           chemical engineering graduate. During my studies, I discovered my
           innate skills as a people person through organizing various events.
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
+        <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           My professional career started as a project engineer in the oil and
           gas industry at My Eco Energy, where I quickly transitioned into
           customer success and project management roles. Working on
@@ -49,7 +52,7 @@ const About = () => {
           crucial role in building an e-commerce project for Total Tiles.
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
+        <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           Seeking further professional growth, I completed a bootcamp on React
           frontend development offered by edX UK. Through this program, I gained
           hands-on experience in developing projects such as finding events
@@ -58,7 +61,7 @@ const About = () => {
           in creating intuitive and seamless user experiences."
         </p>
         <hr className="p-6"></hr>
-        <p className="mb-12 text-lg p-10 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
+        <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           Have a look at the projects that I have worked with and you can find
           my resume a click away if you feel more curious about my previous
           work!

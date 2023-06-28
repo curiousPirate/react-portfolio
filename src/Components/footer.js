@@ -27,6 +27,7 @@ const Footer = () => {
           onClick={handleClick}
         >
           <FontAwesomeIcon
+            title="Home"
             icon={faHouse}
             size="2xl"
             style={{ color: location.pathname === "/" ? "#319795" : "#ffffff" }}
@@ -38,6 +39,7 @@ const Footer = () => {
           onClick={handleClick}
         >
           <FontAwesomeIcon
+            title="About"
             icon={faUserTie}
             size="2xl"
             style={{
@@ -51,6 +53,7 @@ const Footer = () => {
           onClick={handleClick}
         >
           <FontAwesomeIcon
+            title="Projects"
             icon={faLaptopCode}
             size="2xl"
             style={{
@@ -64,6 +67,7 @@ const Footer = () => {
           onClick={handleClick}
         >
           <FontAwesomeIcon
+            title="Contact"
             icon={faEnvelope}
             size="2xl"
             style={{

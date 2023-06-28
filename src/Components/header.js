@@ -18,9 +18,7 @@ export default function Header() {
 
 
   return (
-    <div
-      className="w-full z-50 flex items-center justify-between bg-[#020617] py-2 pr-20 pl-10 sm:pr-28 top-0"
-    >
+    <div className="w-full z-50 flex items-center justify-between bg-[#020617] py-2 pr-20 pl-10 sm:pr-28 top-0">
       <Link to="/" id="home">
         <Logo className="w-18.08 h-20 cursor-pointer" />
       </Link>
@@ -96,14 +94,14 @@ export default function Header() {
                   &lt; Get In Touch! &gt;
                 </Link>
               </li>
-              <li className="flex justify-around">
+              <li className="flex justify-around bg-teal-500 p-4 rounded-xl">
                 <Link
                   to="https://github.com/curiousPirate"
                   title="GitHub"
                   target="_blank"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                    title="GitHub"
                     className="h-6 w-6"
                     fill="currentColor"
                     style={{ color: "#ffffff" }}
@@ -118,7 +116,7 @@ export default function Header() {
                   target="_blank"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                    title="LinkedIn"
                     className="h-6 w-6"
                     fill="currentColor"
                     style={{ color: "#0077b5" }}

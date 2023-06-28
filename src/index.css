@@ -161,3 +161,174 @@ body {
 button.text-white {
   color: rgb(127 255 212);
 }
+
+.balloon {
+	width: 9.35rem;
+	height: 9.35rem;
+	background-color: #f27c68;
+	border-radius: 50%;
+	border: 4px solid #d7e7ea;
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	transform: translate(-50%);
+	-webkit-animation: moving-balloon 3s ease infinite;
+	animation: moving-balloon 3s ease infinite;
+}
+.balloon::after {
+	width: 4.35rem;
+	height: 0;
+	border-top: 3.75rem solid #f27c68;
+	border-left: 1.85rem solid transparent;
+	border-right: 1.85rem solid transparent;
+	content: "";
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.balloon::before {
+	width: 70px;
+	height: 25px;
+	background-color: #e86b5a;
+	border-radius: 5px;
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 9.35rem;
+	transform: translate(-50%);
+}
+
+.basket {
+	width: 2.65rem;
+	height: 1.75rem;
+	background: #d1c1a6;
+	border-radius: 0 0 3px 3px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 16.85rem;
+	-webkit-animation: moving-basket 3s ease infinite;
+	animation: moving-basket 3s ease infinite;
+}
+
+.basket:before {
+	width: 3.15rem;
+	height: 0.65rem;
+	background: #b2a082;
+	border-radius: 3px;
+	content: "";
+	position: absolute;
+	top: -0.65rem;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.basket:after {
+	width: 1.55rem;
+	height: 2.15rem;
+	border-left: 2px solid #b2a082;
+	border-right: 2px solid #b2a082;
+	content: "";
+	position: absolute;
+	top: -2.5rem;
+	left: 50%;
+	transform: translate(-50%) perspective(50px) rotateX(-40deg);
+}
+
+.cloud {
+	width: 140px;
+	height: 1.85rem;
+	background: white;
+	border-radius: 3.15rem;
+	position: absolute;
+	top: 6.25rem;
+	right: 2.5rem;
+	-webkit-animation: moving-cloud 3s ease infinite;
+	animation: moving-cloud 3s ease infinite;
+}
+
+.cloud::before {
+	width: 3.75rem;
+	height: 3.75rem;
+	background: white;
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	top: -2.5rem;
+	left: 1.25rem;
+}
+
+.cloud::after {
+	width: 3.15rem;
+	height: 3.15rem;
+	background: white;
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	top: -1.85rem;
+	right: 1.55rem;
+}
+
+
+body {
+	background-color: #dcf1f2;
+}
+
+@-webkit-keyframes moving-balloon {
+	0% {
+		transform: translate(-50%);
+	}
+	50% {
+		transform: translate(-50%, -10%);
+	}
+}
+
+@keyframes moving-balloon {
+	0% {
+		transform: translate(-50%);
+	}
+	50% {
+		transform: translate(-50%, -10%);
+	}
+}
+
+@-webkit-keyframes moving-basket {
+	0% {
+		transform: translate(-50%);
+	}
+	50% {
+		transform: translate(-50%, -40%);
+	}
+}
+
+@keyframes moving-basket {
+	0% {
+		transform: translate(-50%);
+	}
+	50% {
+		transform: translate(-50%, -40%);
+	}
+}
+
+@-webkit-keyframes moving-cloud {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-7%);
+	}
+}
+
+@keyframes moving-cloud {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-10%);
+	}
+}
+
+button.\!absolute.top-2\/4.right-4.-translate-y-2\/4.rounded-full.select-none.transition-all.disabled\:opacity-50.disabled\:shadow-none.disabled\:pointer-events-none.w-12.max-w-\[48px\].h-12.max-h-\[48px\].text-white.hover\:bg-white\/10.active\:bg-white\/30.grid.place-items-center {
+  color: red;
+}
