@@ -42,21 +42,21 @@ const projectsData = [
 
 export default function Project() {
   // Query Selector
-  const buttonElement = document.querySelector(
-    "button.\\!absolute.top-2\\/4.right-4.-translate-y-2\\/4.rounded-full.select-none.transition-all.disabled\\:opacity-50.disabled\\:shadow-none.disabled\\:pointer-events-none.w-12.max-w-\\[48px\\].h-12.max-h-\\[48px\\].text-white.hover\\:bg-white\\/10.active\\:bg-white\\/30.grid.place-items-center"
-  );
+  // const buttonElement = document.querySelector(
+  //   "button.\\!absolute.top-2\\/4.right-4.-translate-y-2\\/4.rounded-full.select-none.transition-all.disabled\\:opacity-50.disabled\\:shadow-none.disabled\\:pointer-events-none.w-12.max-w-\\[48px\\].h-12.max-h-\\[48px\\].text-white.hover\\:bg-white\\/10.active\\:bg-white\\/30.grid.place-items-center"
+  // );
 
-  // Scroll to Top Function
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-    console.log("test");
-  }
+  // // Scroll to Top Function
+  // function scrollToTop() {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  //   console.log("test");
+  // }
 
-  // Attach onclick event to scroll to top when the button is clicked
-  buttonElement.addEventListener("click", scrollToTop);
+  // // Attach onclick event to scroll to top when the button is clicked
+  // buttonElement.addEventListener("click", scrollToTop);
 
   return (
     <Carousel className="bg-[#001129]">
