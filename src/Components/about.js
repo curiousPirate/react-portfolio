@@ -23,9 +23,6 @@ const About = () => {
         <p className="flex justify-center items-center my-10 p-10 text-3xl md:text-4xl lg:text-5xl text-white underline bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           The Journey
         </p>
-        {/* <div class="balloon"></div>
-        <div class="basket"></div>
-        <div class="cloud"></div> */}
         <hr className="p-6"></hr>
         <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           First impressions matter, even in the digital world. A website is like
