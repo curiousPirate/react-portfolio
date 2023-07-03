@@ -20,9 +20,9 @@ const About = () => {
         className="text-justify"
         style={{ width: "85%", maxWidth: "100%" }}
       >
-        <p className="flex justify-center items-center my-10 p-10 text-3xl md:text-4xl lg:text-5xl text-white underline bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
+        <h1 className="flex justify-center items-center my-10 p-10 text-3xl md:text-4xl lg:text-5xl text-white underline decoration-wavy decoration-teal-400 bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           The Journey
-        </p>
+        </h1>
         <hr className="p-6"></hr>
         <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           First impressions matter, even in the digital world. A website is like
@@ -55,7 +55,7 @@ const About = () => {
           hands-on experience in developing projects such as finding events
           around you and a movie database platform. Additionally, I had the
           opportunity to work on a food delivery application, honing my skills
-          in creating intuitive and seamless user experiences."
+          in creating intuitive and seamless user experiences.
         </p>
         <hr className="p-6"></hr>
         <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">

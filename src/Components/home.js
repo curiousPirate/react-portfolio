@@ -6,19 +6,20 @@ import Intros from "../design/intro-svg/introsvg";
 import { motion } from "framer-motion";
 
 const Home = () => {
-  useEffect(() => {
-    var typed = new Typed(".auto-type", {
-      strings: [
-        "React Front-End Development, Designing, Agile Project Management, Customer Success.",
-      ],
-      typeSpeed: 30,
-      backSpeed: 0,
-    });
 
-    return () => {
-      typed.destroy();
-    };
-  }, []);
+ useEffect(() => {
+   var typed = new Typed(".auto-type", {
+     strings: [
+       "React Front-End Development, Designing, Agile Project Management, Customer Success.",
+     ],
+     typeSpeed: 30,
+     backSpeed: 0,
+   });
+
+   return () => {
+     typed.destroy();
+   };
+ }, []);
 
   return (
     <div className="min-h-screen fixed">

@@ -21,6 +21,11 @@ body {
   color: #102a43;
 }
 
+
+.auto-type {
+  display: inline-block;
+  height: 1.2em; /* Adjust the height as needed */
+}
 /* Loading animation */
 .loading {
   display: flex;
