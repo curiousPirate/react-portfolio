@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
 import TechSVG from "../Components/techsvg";
@@ -7,19 +7,21 @@ import { motion } from "framer-motion";
 
 const Home = () => {
 
- useEffect(() => {
-   var typed = new Typed(".auto-type", {
-     strings: [
-       "React Front-End Development, Designing, Agile Project Management, Customer Success.",
-     ],
-     typeSpeed: 30,
-     backSpeed: 0,
-   });
+  const autoTypeRef = useRef(null);
 
-   return () => {
-     typed.destroy();
-   };
- }, []);
+  useEffect(() => {
+    var typed = new Typed(autoTypeRef.current, {
+      strings: [
+        "React Front-End Development, Designing, Agile Project Management, Customer Success.",
+      ],
+      typeSpeed: 30,
+      backSpeed: 0,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <div className="min-h-screen fixed">
@@ -33,9 +35,9 @@ const Home = () => {
             <h1 className="text-4xl font-bold place-content-center text-[#8d286f]">
               Hello! I'm Chaitanya,
             </h1>
-            <h2 className="text-xl py-4 h-8 font-extrabold z-20">
+            <h2 className="text-xl py-4 h-6 font-extrabold z-20">
               Expertise in: <br />
-              <span className="auto-type"></span>
+              <span style={{height: '100%', width: '100%', display: 'inline-block'}} ref={autoTypeRef}></span>
             </h2>
             <div className="flex flex-col">
               <Link
