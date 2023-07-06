@@ -10,5 +10,15 @@
     "not ios_saf <= 14.8",
     "not opera <= 98",
     "not safari <= 14.1"
-  ]
+  ],
+  "hints": {
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ]
+  }
 }
