@@ -43,9 +43,9 @@ const projectsData = [
 export default function Project() {
 
   return (
-    <Carousel className="bg-[#001129] h-screen">
+    <Carousel className="bg-[#001129] h-full">
       {projectsData.map((project) => (
-        <div className="px-4" key={project.id}>
+        <div className="px-4 h-screen" key={project.id}>
           <h1 className="text-center text-4xl text-teal-600 py-5">
             &lt; PROJECTS &gt;
           </h1>
