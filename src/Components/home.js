@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
 import TechSVG from "../Components/techsvg";
@@ -7,10 +7,8 @@ import { motion } from "framer-motion";
 
 const Home = () => {
 
-  const autoTypeRef = useRef(null);
-
   useEffect(() => {
-    var typed = new Typed(autoTypeRef.current, {
+    var typed = new Typed(".auto-type", {
       strings: [
         "React Front-End Development, Designing, Agile Project Management, Customer Success.",
       ],
@@ -37,7 +35,7 @@ const Home = () => {
             </h1>
             <h2 className="text-xl py-4 h-6 font-extrabold z-20">
               Expertise in: <br />
-              <span style={{height: '100%', width: '100%', display: 'inline-block'}} ref={autoTypeRef}></span>
+              <span style={{ width: '100%', display: 'inline-block'}} className="auto-type"></span>
             </h2>
             <div className="flex flex-col">
               <Link
