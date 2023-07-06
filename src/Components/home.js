@@ -33,14 +33,16 @@ const Home = () => {
             <h1 className="text-4xl font-bold place-content-center text-[#8d286f]">
               Hello! I'm Chaitanya,
             </h1>
-            <h2 className="text-xl py-4 h-6 font-extrabold z-20">
-              Expertise in: <br />
-              <span style={{ width: '100%', display: 'inline-block'}} className="auto-type"></span>
+            <h2 className="text-xl py-4 font-extrabold z-20">
+              Expertise in:
             </h2>
+              <div className="lg:h-12 h-20 text-lg">
+              <span className="auto-type"></span>
+              </div>
             <div className="flex flex-col">
               <Link
                 to="/about"
-                className="relative inline-block px-2 py-2 mt-32 font-medium group"
+                className="relative inline-block p-2 mt-6 font-medium group"
                 style={{ zIndex: "20" }}
               >
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>

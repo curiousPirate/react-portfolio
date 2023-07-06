@@ -20,11 +20,6 @@ body {
   color: #102a43;
 }
 
-.auto-type {
-  display: inline-block;
-  height: 200px; /* Adjust the height as needed */
-}
-
 /* Loading animation */
 .loading {
   display: flex;
