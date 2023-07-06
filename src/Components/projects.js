@@ -43,7 +43,7 @@ const projectsData = [
 export default function Project() {
 
   return (
-    <Carousel className="bg-[#001129]">
+    <Carousel className="bg-[#001129] h-screen">
       {projectsData.map((project) => (
         <div className="px-4" key={project.id}>
           <h1 className="text-center text-4xl text-teal-600 py-5">
@@ -72,7 +72,7 @@ export default function Project() {
               className="text-justify"
               style={{ width: "75%", maxWidth: "50rem" }}
             >
-              <div className="grid grid-cols-1 h-screen">
+              <div className="grid grid-cols-1">
                 <a
                   href={project.projectLink}
                   target="_blank"

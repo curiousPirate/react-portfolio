@@ -17,8 +17,8 @@ const About = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-justify"
-        style={{ width: "85%", maxWidth: "100%" }}
+        className="text-justify lg:w-9/12 w-11/12"
+        style={{ maxWidth: "50rem" }}
       >
         <h1 className="flex justify-center items-center my-10 p-10 text-3xl md:text-4xl lg:text-5xl text-white underline decoration-wavy decoration-teal-400 bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
           The Journey
