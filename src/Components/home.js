@@ -1,26 +1,10 @@
-import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Typed from "typed.js";
+import Typewriter from "typewriter-effect";
 import TechSVG from "../Components/techsvg";
 import Intros from "../design/intro-svg/introsvg";
 import { motion } from "framer-motion";
 
 const Home = () => {
-
-  useEffect(() => {
-    var typed = new Typed(".auto-type", {
-      strings: [
-        "React Front-End Development, Designing, Agile Project Management, Customer Success.",
-      ],
-      typeSpeed: 30,
-      backSpeed: 0,
-    });
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
   return (
     <div className="min-h-screen fixed">
       <motion.div
@@ -33,12 +17,19 @@ const Home = () => {
             <h1 className="text-4xl font-bold place-content-center text-[#8d286f]">
               Hello! I'm Chaitanya,
             </h1>
-            <h2 className="text-xl py-4 font-extrabold z-20">
-              Expertise in:
-            </h2>
-              <div className="lg:h-12 h-20 text-lg">
-              <span className="auto-type"></span>
-              </div>
+            <h2 className="text-xl py-4 font-extrabold z-20">Expertise in:</h2>
+            <span className="text-lg">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .changeDelay(30)
+                    .typeString(
+                      "React Front-End Development, Designing, Agile Project Management, Customer Success."
+                    )
+                    .start();
+                }}
+              />
+            </span>
             <div className="flex flex-col">
               <Link
                 to="/about"
@@ -57,7 +48,7 @@ const Home = () => {
           <div className="md:w-1/2">
             <img
               src={require("../design/chaitanya.jpg")}
-              className="object-contain"
+              className="object-contain w-min h-min"
               alt="chaitanya"
             />
           </div>
