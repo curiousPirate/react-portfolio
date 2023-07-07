@@ -61,6 +61,7 @@ export default function Project() {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-96 object-cover"
+                loading="eager"
               />
             </div>
           </motion.div>
