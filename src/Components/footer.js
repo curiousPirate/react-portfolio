@@ -17,10 +17,10 @@ const Footer = () => {
 
   return (
     <footer
-      className="fixed bottom-0 bg-[#8d286f] bg-opacity-60 backdrop-blur-sm py-3 w-full"
+      className="fixed bottom-0 bg-[#8d286f] bg-opacity-60 backdrop-blur-sm py-3 w-full footer-list"
       style={{ zIndex: "200" }}
     >
-      <div className="flex space-x-4 justify-around items-center">
+      <div className="flex space-x-4 justify-around items-center footer">
         <Link
           to="/"
           className={location.pathname === "/" ? "active" : ""}
@@ -32,6 +32,7 @@ const Footer = () => {
             size="2xl"
             style={{ color: location.pathname === "/" ? "#319795" : "#ffffff" }}
           />
+          Home
         </Link>
         <Link
           to="/about"

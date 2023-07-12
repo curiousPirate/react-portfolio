@@ -159,3 +159,11 @@ body {
 button.text-white {
   color: rgb(127 255 212);
 }
+
+
+.footer-list > div > a > svg {
+  background-color: aliceblue;
+  color: red;
+  size: 1000px;
+  fill: #8d286f;
+}
