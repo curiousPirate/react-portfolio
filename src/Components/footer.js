@@ -32,7 +32,6 @@ const Footer = () => {
             size="2xl"
             style={{ color: location.pathname === "/" ? "#319795" : "#ffffff" }}
           />
-          Home
         </Link>
         <Link
           to="/about"
