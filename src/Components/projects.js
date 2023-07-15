@@ -43,10 +43,10 @@ const projectsData = [
 export default function Project() {
 
   return (
-    <Carousel className="bg-[#001129] h-full">
+    <Carousel className="bg-[#001129]">
       {projectsData.map((project) => (
-        <div className="px-4 h-screen" key={project.id}>
-          <h1 className="text-center text-4xl text-teal-600 py-5">
+        <div className="px-4" key={project.id}>
+          <h1 className="text-center text-4xl text-teal-600 my-5">
             &lt; PROJECTS &gt;
           </h1>
           <motion.div
@@ -71,9 +71,9 @@ export default function Project() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.8 }}
               className="text-justify"
-              style={{ width: "75%", maxWidth: "50rem" }}
+              style={{ width: "75%", maxWidth: "50rem", height: "50%", maxHeight: "50rem"  }}
             >
-              <div className="grid grid-cols-1">
+              <div className="flex flex-col">
                 <a
                   href={project.projectLink}
                   target="_blank"

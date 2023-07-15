@@ -38,6 +38,7 @@ body {
   background-color: #001129;
 }
 
+
 /* satellite svg animation */
 .satellite {
   position: fixed;
@@ -201,6 +202,11 @@ button.text-white {
   font-size: 1.5em;
   text-align: center;
   transition: 0.5s;
+  color: white;
+}
+
+.footer-list ul li a .icon:hover {
+  cursor: pointer;
 }
 
 .footer-list ul li.active a .icon {
