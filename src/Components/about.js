@@ -64,7 +64,7 @@ const About = () => {
           work!
         </p>
         <hr className="p-6"></hr>
-        <div className="flex justify-center gap-6 mb-20">
+        <div className="flex justify-center gap-6 mb-32">
           <a
             href={require("../design/Resume.pdf")}
             target="_blank"

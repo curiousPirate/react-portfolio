@@ -114,7 +114,7 @@ export default function Project() {
                   </span>
                   <hr className="p-6"></hr>
                 </div>
-                <div className="flex lg:flex-row flex-col pb-20">
+                <div className="flex lg:flex-row flex-col mb-32">
                   <a
                     href={project.projectLink}
                     target="_blank"

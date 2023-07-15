@@ -18,7 +18,7 @@ const Home = () => {
               Hello! I'm Chaitanya,
             </h1>
             <h2 className="text-xl py-4 font-extrabold z-20">Expertise in:</h2>
-            <span className="text-lg lg:h-20 h-18">
+            <span className="text-lg h-16 inline-block">
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
