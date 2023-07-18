@@ -15,7 +15,7 @@ const Home = () => {
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 flex flex-col p-8 mt-10 lg:mt-20 bg-[#001129] text-teal-600">
             <h1 className="text-4xl font-bold place-content-center text-[#8d286f]">
-              Hello! I'm Chaitanya,
+              <em>Hello! I'm Chaitanya,</em>
             </h1>
             <h2 className="text-xl py-4 font-extrabold z-20">Expertise in:</h2>
             <span className="text-lg h-16 inline-block">
