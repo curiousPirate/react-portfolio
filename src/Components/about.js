@@ -72,7 +72,7 @@ const About = () => {
             className="relative inline-block px-2 py-2 font-medium group"
           >
             <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span className="absolute inset-0 w-full h-full bg-teal-600 border-2 border-black group-hover:bg-black"></span>
+            <span className="absolute inset-0 w-full h-full bg-[#00A0B2] border-2 border-black group-hover:bg-black"></span>
             <span className="flex relative justify-center text-white group-hover:text-white">
               &lt;RESUME /&gt;
             </span>
@@ -83,7 +83,7 @@ const About = () => {
             onClick={handleClick}
           >
             <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-            <span className="absolute inset-0 w-full h-full bg-teal-600 border-2 border-black group-hover:bg-black"></span>
+            <span className="absolute inset-0 w-full h-full bg-[#00A0B2] border-2 border-black group-hover:bg-black"></span>
             <span className="flex relative justify-center text-white group-hover:text-white">
               &lt;PROJECTS /&gt;
             </span>

@@ -234,7 +234,7 @@ button.text-white {
   top: -50%;
   width: 70px;
   height: 70px;
-  background-color: hsl(193, 65%, 28%);
+  background-color: #00A0B2;
   border-radius: 50%;
   border: 6px solid #001129;
   transition: 0.5s;
@@ -249,7 +249,7 @@ button.text-white {
   height: 20px;
   background: transparent;
   border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0 #00112900;
+  box-shadow: 0px -10px 0 0 #001129;
 }
 
 .indicator::after {
@@ -259,8 +259,9 @@ button.text-white {
   right: -23px;
   width: 20px;
   height: 20px;
-  background: transparent;
+
   border-top-left-radius: 20px;
+  box-shadow: 0px -10px 0 0 #001129;
 }
 
 .footer-list ul li:nth-child(1).active ~ .indicator {

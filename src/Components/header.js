@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from "../design/logo.svg";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const genericHamburgerLine = `h-1 w-12 my-1 rounded-full bg-teal-600 border-0 border-solid transition ease transform duration-200`;
+  const genericHamburgerLine = `h-1 w-12 my-1 rounded-full bg-[#020617] border-0 border-solid transition ease transform duration-200`;
   const closeMenu = () => {
     setIsNavOpen(false);
     document.getElementById("menu").classList.add("hideMenuNav");
@@ -26,7 +26,7 @@ export default function Header() {
       <nav>
         <section className="flex">
           <button
-            className="flex flex-col h-12 w-16 bg-[#102a43] rounded justify-center items-center group fixed top-6"
+            className="flex flex-col h-12 w-16 bg-[#00A0B2] rounded justify-center items-center group fixed top-6"
             onClick={toggleMenu}
             style={{ zIndex: 1000 }}
           >

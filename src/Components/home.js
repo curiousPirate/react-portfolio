@@ -13,7 +13,7 @@ const Home = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/2 flex flex-col p-8 mt-10 lg:mt-20 bg-[#001129] text-teal-600">
+          <div className="md:w-1/2 flex flex-col p-8 mt-10 lg:mt-20 bg-[#001129] text-[#00A0B2]">
             <h1 className="text-4xl font-bold place-content-center text-[#8d286f]">
               <em>Hello! I'm Chaitanya,</em>
             </h1>
@@ -37,7 +37,7 @@ const Home = () => {
                 style={{ zIndex: "20" }}
               >
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full bg-teal-600 border-2 border-black group-hover:bg-black"></span>
+                <span className="absolute inset-0 w-full h-full bg-[#00A0B2] border-2 border-black group-hover:bg-black"></span>
                 <span className="flex relative justify-center text-white  group-hover:text-white">
                   &lt;GET STARTED /&gt;
                 </span>
