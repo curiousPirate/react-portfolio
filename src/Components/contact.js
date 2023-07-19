@@ -60,7 +60,7 @@ function Contact() {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="rounded-xl leading-tight"
+              className="rounded-xl leading-tight focus:border-[#00A0B2] focus:ring-[#00A0B2]"
               required="required"
             />
             <span htmlFor="email">Email</span>
@@ -72,7 +72,7 @@ function Contact() {
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="rounded-xl leading-tight"
+              className="rounded-xl leading-tight focus:border-[#00A0B2] focus:ring-[#00A0B2]"
               required="required"
             />
             <span htmlFor="name">Name</span>
@@ -83,7 +83,7 @@ function Contact() {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="rounded-xl h-32 leading-tight"
+              className="rounded-xl h-32 leading-tight focus:border-[#00A0B2] focus:ring-[#00A0B2]"
             />
             <span htmlFor="message">Message</span>
           </div>

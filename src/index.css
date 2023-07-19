@@ -73,7 +73,7 @@ body {
   font-size: 1em;
   text-transform: uppercase;
   pointer-events: none;
-  color: rgba(127, 255, 212, 0.30);
+  color: #00A0B2;
     transition: transform 0.5s, font-size 0.5s, padding 0.5s,
     background-color 0.5s, border-left-color 0.5s, border-right-color 0.5s,
     letter-spacing 0.5s, color 0.5s;
@@ -105,11 +105,6 @@ body {
     background-color 0.2s, color 0.2s;
 }
 
-.inputBox input:valid,
-.inputBox input:focus,
-.inputBox textarea:focus {
-  border-color: aquamarine;
-}
 
 /* Project imgs scroll on hover */
 .screen {
