@@ -108,7 +108,6 @@ body {
 
 /* Project imgs scroll on hover */
 .screen {
-  display: block;
   width: 90%;
   height: 450px;
   overflow: auto;
@@ -134,25 +133,12 @@ body {
 }
 
 .screen:hover img {
-  top: -10%;
+  top: -20%;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-}
-
-/* Carousel btns */
-.\!absolute {
-  position: fixed !important;
-}
-
-.bottom-4 {
-  display: none;
-}
-
-button.text-white {
-  color: rgb(127 255 212);
 }
 
 /* footer icons animation */

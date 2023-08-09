@@ -1,5 +1,5 @@
-import { Carousel } from "@material-tailwind/react";
-import { motion } from "framer-motion";
+// import { Carousel } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const projectsData = [
   {
@@ -42,158 +42,105 @@ const projectsData = [
 
 export default function Project() {
 
-  return (
-  <Carousel className="bg-[#001129]">
-    {projectsData.map((project) => (
-        <div className="px-4" key={project.id}>
-          <h1 className="text-center text-4xl text-teal-600 my-5">
-          &lt; PROJECTS &gt;
-        </h1>
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.0 }}
+return (
+  <div className="bg-[#001129]">
+    <h1 className="text-center text-4xl text-teal-600 my-5">
+      &lt; PROJECTS &gt;
+    </h1>
+    <div className="grid gap-4 grid-cols-1 p-4">
+      {projectsData.map((project) => (
+        <div
+          className={`flex ${
+            project.id % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+          } flex-col flex-wrap`}
+          key={project.id}
         >
-          <div className="screen">
+          <div className="w-full md:w-1/2 screen overflow-hidden relative flex items-center justify-center">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-96 object-cover"
-              loading="eager"
+              className="object-cover max-w-full h-auto image-initial"
             />
           </div>
-        </motion.div>
-          <div className="flex place-content-center">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.8 }}
-              className="text-justify"
-              style={{ width: "75%", maxWidth: "50rem"}}
-        >
-              <div className="flex flex-col">
-          <a
-            href={project.projectLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-center py-4 md:py-8 font-bold"
-          >
-            <span className="text-3xl md:text-3xl text-[#8d286f] first-letter:text-6xl hover:underline">
-              {project.title}
-            </span>
-          </a>
-          <hr className="p-6"></hr>
-          <div className="text-lg text-white text-justify">
-            <span className="block mb-12 mt-4 text-3xl font-bold first-letter:text-[#8d286f] underline">
-              Introduction:
-            </span>
-            <span className="block first-letter:text-4xl first-letter:font-bold first-letter:mr-2 first-letter:float-left first-letter:text-[#8d286f]">
-              {project.description}
-            </span>
-            <hr className="p-6 mt-12"></hr>
-            {project.futureDevelopment && (
-              <span className="block mt-4 mb-12 text-3xl font-bold first-letter:text-[#8d286f] underline">
-                Future Development:
-              </span>
-            )}
-            {project.futureDevelopment && (
-              <>
-                <span className="block mb-12 first-letter:text-4xl first-letter:font-bold first-letter:mr-2 first-letter:float-left first-letter:text-[#8d286f]">
-                  {project.futureDevelopment}
+
+          <div className="w-full md:w-1/2 px-4">
+            <div className="flex flex-col">
+              <a
+                href={project.projectLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex justify-center py-4 md:py-8 font-bold"
+              >
+                <span className="text-3xl md:text-3xl text-[#8d286f] first-letter:text-6xl hover:underline">
+                  {project.title}
                 </span>
+              </a>
+              <hr className="p-6"></hr>
+              <div className="text-lg text-white text-justify">
+                <span className="block mb-12 text-3xl font-bold first-letter:text-[#8d286f] underline">
+                  Introduction:
+                </span>
+                <p className="line-clamp-5">
+                  {project.description.length <= 200
+                    ? project.description
+                    : `${project.description.slice(0, 200)}...`}
+                </p>
+                {project.description.length > 200 && (
+                  <Link
+                    to={`/projects/${project.id}`} // Replace with your actual route
+                    className="text-[#8d286f] underline mt-4"
+                  >
+                    Read More
+                  </Link>
+                )}
+                <hr className="p-6 mt-12"></hr>
+                <span className="block mt-4 mb-12 text-3xl font-bold first-letter:text-[#8d286f] underline text-left">
+                  Technologies &amp; API's:
+                </span>
+                <span className="block mb-12 text-left">{project.skills}</span>
                 <hr className="p-6"></hr>
-              </>
-            )}
-            <span className="block mt-4 mb-12 text-3xl font-bold first-letter:text-[#8d286f] underline text-left">
-              Technologies &amp; API's:
-            </span>
-            <span className="block mb-12 text-left">
-              {project.skills}
-            </span>
-            <hr className="p-6"></hr>
-          </div>
-                <div className="flex lg:flex-row flex-col mb-32">
-            <a
-              href={project.projectLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#8d286f] text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
-            >
-              Live Site
-              <svg
-                className="h- w-5 mx-2"
-                fill="currentColor"
-                style={{ color: "#fffff" }}
-                viewBox="0 0 256 256"
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <circle
-                  cx="128"
-                  cy="128"
-                  r="96"
-                  fill="none"
-                  stroke="#fff"
-                  strokeMiterlimit="10"
-                  strokeWidth="16"
-                ></circle>
-                <line
-                  x1="37.467"
-                  x2="218.532"
-                  y1="96"
-                  y2="96"
-                  fill="none"
-                  stroke="#fff"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="16"
-                ></line>
-                <line
-                  x1="37.471"
-                  x2="218.534"
-                  y1="160"
-                  y2="160"
-                  fill="none"
-                  stroke="#fff"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="16"
-                ></line>
-                <ellipse
-                  cx="128"
-                  cy="128"
-                  fill="none"
-                  stroke="#fff"
-                  strokeMiterlimit="10"
-                  strokeWidth="16"
-                  rx="40"
-                  ry="93.423"
-                ></ellipse>
-              </svg>
-            </a>
-            <a
-              href={project.repoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-teal-600 text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
-            >
-              View Code
-              <svg
-                className="h- w-5 mx-2"
-                fill="currentColor"
-                style={{ color: "#fffff" }}
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
-            </a>
-          </div>
               </div>
-        </motion.div>
-      </div>
+              <div className="flex lg:flex-row flex-col mb-32">
+                <a
+                  href={project.projectLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#8d286f] text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
+                >
+                  Live Site
+                  <svg
+                    className="h- w-5 mx-2"
+                    fill="currentColor"
+                    style={{ color: "#fffff" }}
+                    viewBox="0 0 256 256"
+                  >
+                    {/* SVG path for the live site icon */}
+                  </svg>
+                </a>
+                <a
+                  href={project.repoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-teal-600 text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
+                >
+                  View Code
+                  <svg
+                    className="h- w-5 mx-2"
+                    fill="currentColor"
+                    style={{ color: "#fffff" }}
+                    viewBox="0 0 24 24"
+                  >
+                    {/* SVG path for the GitHub icon */}
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+              <hr></hr>
         </div>
-    ))}
-  </Carousel>
-  );
+      ))}
+    </div>
+  </div>
+);
+
 }
