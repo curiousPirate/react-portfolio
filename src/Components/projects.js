@@ -1,5 +1,4 @@
-// import { Carousel } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 const projectsData = [
   {
@@ -40,107 +39,126 @@ const projectsData = [
   },
 ];
 
+
+
+
 export default function Project() {
+  const [showFullDescription, setShowFullDescription] = useState(false);
+  return (
+    <div className="bg-[#001129]">
+      <h1 className="text-center text-4xl text-teal-600 my-5">
+        &lt; PROJECTS &gt;
+      </h1>
+      <div className="grid gap-4 grid-cols-1 p-4">
+        {projectsData.map((project) => (
+          <div
+            className={`flex ${
+              project.id % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            } flex-col flex-wrap`}
+            key={project.id}
+          >
+            <div className="w-full md:w-1/2 screen overflow-hidden relative flex items-center justify-center">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="object-cover max-w-full h-auto image-initial"
+              />
+            </div>
 
-return (
-  <div className="bg-[#001129]">
-    <h1 className="text-center text-4xl text-teal-600 my-5">
-      &lt; PROJECTS &gt;
-    </h1>
-    <div className="grid gap-4 grid-cols-1 p-4">
-      {projectsData.map((project) => (
-        <div
-          className={`flex ${
-            project.id % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-          } flex-col flex-wrap`}
-          key={project.id}
-        >
-          <div className="w-full md:w-1/2 screen overflow-hidden relative flex items-center justify-center">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="object-cover max-w-full h-auto image-initial"
-            />
-          </div>
-
-          <div className="w-full md:w-1/2 px-4">
-            <div className="flex flex-col">
-              <a
-                href={project.projectLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center py-4 md:py-8 font-bold"
-              >
-                <span className="text-3xl md:text-3xl text-[#8d286f] first-letter:text-6xl hover:underline">
-                  {project.title}
-                </span>
-              </a>
-              <hr className="p-6"></hr>
-              <div className="text-lg text-white text-justify">
-                <span className="block mb-12 text-3xl font-bold first-letter:text-[#8d286f] underline">
-                  Introduction:
-                </span>
-                <p className="line-clamp-5">
-                  {project.description.length <= 200
-                    ? project.description
-                    : `${project.description.slice(0, 200)}...`}
-                </p>
-                {project.description.length > 200 && (
-                  <Link
-                    to={`/projects/${project.id}`} // Replace with your actual route
-                    className="text-[#8d286f] underline mt-4"
-                  >
-                    Read More
-                  </Link>
-                )}
-                <hr className="p-6 mt-12"></hr>
-                <span className="block mt-4 mb-12 text-3xl font-bold first-letter:text-[#8d286f] underline text-left">
-                  Technologies &amp; API's:
-                </span>
-                <span className="block mb-12 text-left">{project.skills}</span>
-                <hr className="p-6"></hr>
-              </div>
-              <div className="flex lg:flex-row flex-col mb-32">
+            <div className="w-full md:w-1/2 px-4">
+              <div className="flex flex-col">
                 <a
                   href={project.projectLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#8d286f] text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
+                  className="flex justify-center py-4 md:py-8 font-bold"
                 >
-                  Live Site
-                  <svg
-                    className="h- w-5 mx-2"
-                    fill="currentColor"
-                    style={{ color: "#fffff" }}
-                    viewBox="0 0 256 256"
-                  >
-                    {/* SVG path for the live site icon */}
-                  </svg>
+                  <span className="text-3xl md:text-3xl text-[#8d286f] first-letter:text-6xl hover:underline">
+                    {project.title}
+                  </span>
                 </a>
-                <a
-                  href={project.repoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-teal-600 text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
-                >
-                  View Code
-                  <svg
-                    className="h- w-5 mx-2"
-                    fill="currentColor"
-                    style={{ color: "#fffff" }}
-                    viewBox="0 0 24 24"
+                <hr className="p-6"></hr>
+                <div className="text-lg text-white text-justify">
+                  <span className="block mb-12 text-3xl font-bold first-letter:text-[#8d286f] underline">
+                    Introduction:
+                  </span>
+                  <p className="line-clamp-5">
+                    {project.description.length <= 200
+                      ? project.description
+                      : `${project.description.slice(0, 200)}...`}
+                  </p>
+                  {showFullDescription ? (
+                    <div className="mt-4">
+                      {project.description}{" "}
+                      <button
+                        onClick={() => setShowFullDescription(false)}
+                        className="text-[#8d286f] underline"
+                      >
+                        Read Less
+                      </button>
+                    </div>
+                  ) : (
+                    <div>
+                      <p className="mt-4">
+                        {project.description.substring(0, 200)}...
+                      </p>
+                      <button
+                        onClick={() => setShowFullDescription(true)}
+                        className="text-[#8d286f] underline"
+                      >
+                        Read More
+                      </button>
+                    </div>
+                  )}
+                  <hr className="p-6 mt-12"></hr>
+                  <span className="block mt-4 mb-12 text-3xl font-bold first-letter:text-[#8d286f] underline text-left">
+                    Technologies &amp; API's:
+                  </span>
+                  <span className="block mb-12 text-left">
+                    {project.skills}
+                  </span>
+                  <hr className="p-6"></hr>
+                </div>
+                <div className="flex lg:flex-row flex-col mb-32">
+                  <a
+                    href={project.projectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#8d286f] text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
                   >
-                    {/* SVG path for the GitHub icon */}
-                  </svg>
-                </a>
+                    Live Site
+                    <svg
+                      className="h- w-5 mx-2"
+                      fill="currentColor"
+                      style={{ color: "#fffff" }}
+                      viewBox="0 0 256 256"
+                    >
+                      {/* SVG path for the live site icon */}
+                    </svg>
+                  </a>
+                  <a
+                    href={project.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-teal-600 text-white px-4 my-4 flex items-center py-2 rounded-md hover:bg-black mr-2 text-sm"
+                  >
+                    View Code
+                    <svg
+                      className="h- w-5 mx-2"
+                      fill="currentColor"
+                      style={{ color: "#fffff" }}
+                      viewBox="0 0 24 24"
+                    >
+                      {/* SVG path for the GitHub icon */}
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
+            <hr></hr>
           </div>
-              <hr></hr>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
-);
-
+  );
 }
