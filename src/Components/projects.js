@@ -41,6 +41,7 @@ const projectsData = [
 
 export default function Project() {
   const [showFullDescription, setShowFullDescription] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   return (
     <div className="bg-[#001129] p-4 mb-28">
       <h1 className="text-center text-4xl text-teal-600 my-5">
@@ -66,9 +67,17 @@ export default function Project() {
           >
             <div className="w-full md:w-1/2 screen overflow-hidden relative">
               <img
+                src={require("../design/logo.svg")}
+                alt={project.title}
+                className="object-cover max-w-full h-auto transition-opacity duration-500"
+              />
+              <img
                 src={project.image}
                 alt={project.title}
-                className="object-cover max-w-full h-auto"
+                className={`object-cover max-w-full h-auto transition-opacity duration-500 absolute top-0 left-0 ${
+                  isImageLoaded ? "opacity-100" : "opacity-0"
+                }`}
+                onLoad={() => setIsImageLoaded(true)}
               />
             </div>
             <div className="w-full md:w-1/2 px-4">
