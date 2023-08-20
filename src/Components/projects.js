@@ -67,7 +67,7 @@ export default function Project() {
           >
             <div className="w-full md:w-1/2 screen overflow-hidden relative">
               <img
-                src={require("../design/logo.svg")}
+                src="../design/logo.svg"
                 alt={project.title}
                 className="object-cover max-w-full h-auto transition-opacity duration-500"
               />
