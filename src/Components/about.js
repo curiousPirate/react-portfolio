@@ -67,7 +67,7 @@ const About = () => {
         <hr className="p-6"></hr>
         <div className="flex justify-center gap-6 mb-32">
           <a
-            href={require("../design/Resume.pdf")}
+            href={require("../design/ChaitanyaFrontendWebDeveloperResume.pdf")}
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-block px-2 py-2 font-medium group"
