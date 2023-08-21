@@ -32,9 +32,10 @@ const About = () => {
         </p>
         <hr className="p-6"></hr>
         <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
-          With over 5 years of experience, I bring a unique perspective as a
-          chemical engineering graduate. During my studies, I discovered my
-          innate skills as a people person through organizing various events.
+          With over 5 years of experience & 3 years of experience in Frontend development,
+          I bring in a unique perspective from different fields. It all started as a self
+          taught Frontend Developer when I was asked to create a website and my career made a
+          significant turn!
         </p>
         <hr className="p-6"></hr>
         <p className="mb-12 text-lg lg:p-10 p-4 text-white bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
