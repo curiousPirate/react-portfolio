@@ -44,8 +44,8 @@ export default function Project() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   return (
     <div className="bg-[#001129] p-4 mb-28">
-      <h1 className="text-center text-4xl text-teal-600 my-5">
-        &lt; PROJECTS &gt;
+      <h1 className="flex justify-center items-center my-10 p-10 text-3xl md:text-4xl lg:text-5xl text-white underline decoration-wavy decoration-teal-400 bg-sky-600 backdrop-filter backdrop-blur-sm border-solid rounded-xl">
+        Projects
       </h1>
       {projectsData.map((project) => (
         <div className="w-full" key={project.id}>
